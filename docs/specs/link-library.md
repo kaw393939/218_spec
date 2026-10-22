@@ -2,11 +2,11 @@
 
 Paste a link. Get a useful summary. Find it later.
 
-**For:** one person. **Progress:** planned; application code has not been written.
+**For:** one person. **Progress:** LINK-001 is implemented locally. Page reading, summaries, search, and editing are still planned.
 
 ## How it works
 
-1. Paste a URL and optionally add a note.
+1. Paste a URL and optionally add a note. Saving and duplicate detection work now.
 2. The app saves it, reads the page, and uses OpenAI to suggest a category, topic tags, and a short summary.
 3. Browse or search your library. Open an entry to read the summary, visit the source, or make corrections.
 
@@ -21,6 +21,14 @@ Keep the interface to a URL box, a searchable list with category filters, and an
 | LINK-003 | Organize and summarize | The entry gets a category, topic tags, a short summary, and key points based on retrieved or pasted content. Missing facts stay unknown. |
 | LINK-004 | Browse and search | Search titles, summaries, tags, and notes; filter by category; open the original source. |
 | LINK-005 | Edit an entry | Change the category, tags, summary, or notes. Reprocessing preserves manual edits unless you choose to replace them. |
+
+## Try saving a link
+
+Run `npm ci` and `npm start` in the repository, then open **http://127.0.0.1:3000**. The app saves to `data/links.sqlite`. This is a local application; the GitHub Pages site contains the documentation.
+
+A saved entry has its own `/links/ID` address. Equivalent URLs return that entry and keep its original note. Normalization trims surrounding whitespace, normalizes hostname case and default ports, and removes fragments. Paths, trailing slashes, query parameters, and HTTP versus HTTPS remain distinct.
+
+Only HTTP(S) URLs without embedded credentials are accepted. URLs are limited to 2,048 characters and notes to 4,000. Entries show **Saved** until page processing is implemented; saving does not fetch the URL or call OpenAI.
 
 ## Categories
 
@@ -49,7 +57,7 @@ Each feature has one issue. As implementation lands, add its pull request, sourc
 
 | Feature | Issue | Implementation | Verification |
 | --- | --- | --- | --- |
-| LINK-001 | [#1](https://github.com/kaw393939/218_spec/issues/1) | Not implemented | Not verified |
+| LINK-001 | [#1](https://github.com/kaw393939/218_spec/issues/1) | [PR #6](https://github.com/kaw393939/218_spec/pull/6), [Server](https://github.com/kaw393939/218_spec/blob/main/app/server.js), [SQLite storage](https://github.com/kaw393939/218_spec/blob/main/app/store.js), [form](https://github.com/kaw393939/218_spec/blob/main/app/public/app.js) | [Acceptance tests](https://github.com/kaw393939/218_spec/blob/main/test/link-001.test.js) · `npm test` |
 | LINK-002 | [#2](https://github.com/kaw393939/218_spec/issues/2) | Not implemented | Not verified |
 | LINK-003 | [#3](https://github.com/kaw393939/218_spec/issues/3) | Not implemented | Not verified |
 | LINK-004 | [#4](https://github.com/kaw393939/218_spec/issues/4) | Not implemented | Not verified |
@@ -57,7 +65,7 @@ Each feature has one issue. As implementation lands, add its pull request, sourc
 
 ## Decisions still to make
 
-- Backend language and framework.
+- Backend: Node.js with its built-in HTTP server and SQLite support. No application framework needed for saving links.
 - Where to host the app after the local version works.
 
-Next step: review the five features, then implement the smallest end-to-end path: save one link, summarize it, and display it.
+Next step: LINK-002, reading a saved page. LINK-003 will add categorization and summaries afterward.

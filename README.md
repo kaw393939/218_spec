@@ -1,14 +1,29 @@
 # IS218 Program Specs
 
-Short plans and feature tracking for personal projects.
+Short plans and feature tracking for personal projects, plus the personal link library application.
 
 **Site:** https://kaw393939.github.io/218_spec/
 
-Start with the [personal link library spec](docs/specs/link-library.md). Its five features link to GitHub issues; code and test links will be added during implementation. No application code has been written yet.
+Start with the [personal link library spec](docs/specs/link-library.md). Its five features link to GitHub issues, code, and tests. LINK-001 is implemented: save URLs and notes in SQLite, validate input, and reopen existing entries for duplicate URLs. Other features are planned.
+
+## Run the application
+
+Use Node.js 22.13 or newer (Node.js 24 is used in CI).
+
+```sh
+npm ci
+npm start
+```
+
+Open http://127.0.0.1:3000. The app binds to your computer only. SQLite data lives in `data/links.sqlite` and is ignored by Git. Stop the app before copying the `data/` directory for a backup. `PORT` and `LINKS_DB_PATH` optionally change the port and database path.
+
+`npm run dev` restarts the server after code changes. `npm test` runs the LINK-001 acceptance tests against isolated databases. Saving works without an API key; page reading and AI processing are not implemented yet.
+
+GitHub Pages serves documentation only; run the application locally.
 
 ## Run the docs
 
-Use Node.js 22 or newer.
+Use Node.js 22.13 or newer.
 
 ```sh
 npm ci
