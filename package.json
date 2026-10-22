@@ -5,7 +5,10 @@
   "scripts": {
     "docs:dev": "vitepress dev docs --host 127.0.0.1",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs --host 127.0.0.1"
+    "docs:preview": "vitepress preview docs --host 127.0.0.1",
+    "start": "node app/server.js",
+    "dev": "node --watch app/server.js",
+    "test": "node --test test/*.test.js"
   },
   "type": "module",
   "devDependencies": {
@@ -13,7 +16,7 @@
   },
   "private": true,
   "engines": {
-    "node": ">=22"
+    "node": ">=22.13.0"
   },
   "overrides": {
     "vite": "^6.4.5"
