@@ -1,40 +1,27 @@
-# Review process
+# How we work
 
-Read specifications on this site and discuss proposed changes in GitHub pull requests.
+Keep the plan short and the work easy to follow.
 
-## 1. Draft
+## One issue per feature
 
-Start with the [specification template](../specs/template). Name the owner, describe the problem, and write requirements with acceptance criteria. Add the document to the [directory](../specs/).
+Use a stable ID such as **LINK-001** in the spec and issue title. Each issue needs only:
 
-## 2. Request review
+- What the user should be able to do.
+- A short checklist describing when it is done.
+- A link to the specification.
 
-Create a branch and open a pull request. Set the specification's status to **In review** and identify questions that need a decision. Explain the proposed program or revision.
+Use **open** for work remaining and **closed** for completed work. Add labels only when they help; no extra project board is required.
 
-For feedback spanning several documents, [open a review issue](https://github.com/kaw393939/218_spec/issues/new/choose) and link the affected pages.
+## Link the implementation
 
-## 3. Discuss and revise
+Reference the feature ID in the pull request and use `Closes #123` for its issue. Add links to the implementing code and relevant tests in the spec's tracking table. Close a feature when its acceptance criteria work, not just when files exist.
 
-Reviewers should check:
+Until implementation exists, write **Not implemented** instead of guessing file paths.
 
-- The problem, users, and scope are clear.
-- Requirements describe behavior that can be verified.
-- Inputs, outputs, validation, and failure behavior are defined.
-- Acceptance scenarios cover main workflows and important edge cases.
-- Dependencies, constraints, and unresolved questions are visible.
-- Decisions and changes include their rationale.
+## Review and publish
 
-Leave line comments on the pull request for specific feedback. Use GitHub review outcomes to record approval or requested changes.
+Read the spec together, resolve unclear behavior in the issue, and keep decisions beside the feature. Use pull requests for changes that benefit from review; small documentation edits can go directly to `main`.
 
-## 4. Approve and publish
+Run `npm run docs:build` before publishing. Every push to `main` updates this site through [GitHub Actions](https://github.com/kaw393939/218_spec/actions/workflows/deploy.yml).
 
-After explicit reviewer approval, record the outcome and update the specification and directory to **Approved**. Merge into `main`; GitHub Actions builds and publishes this site automatically.
-
-Check the [deployment workflow](https://github.com/kaw393939/218_spec/actions/workflows/deploy.yml) if an update has not appeared.
-
-## 5. Keep specifications current
-
-Propose requirement changes through another pull request. Preserve stable requirement IDs, explain changes, and update acceptance scenarios. Mark replaced documents **Superseded** and link to replacements.
-
-::: tip A useful review question
-Could another person implement and verify this program using only the specification?
-:::
+[Open issues](https://github.com/kaw393939/218_spec/issues) · [Start a project](../specs/template)

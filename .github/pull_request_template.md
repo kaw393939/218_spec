@@ -1,14 +1,11 @@
-## Specification or change
+## What changed
 
-Describe the proposed program or requirements change and why it is needed.
+Describe the result and reference the feature ID.
 
-## Review focus
+## Issue
 
-Link the specification and list questions requiring a decision.
+Closes #<!-- issue number -->
 
-## Checks
+## Verification
 
-- [ ] Requirements and acceptance criteria are clear.
-- [ ] Open questions and decisions are documented.
-- [ ] Specification directory and status are current.
-- [ ] `npm run docs:build` passes.
+How was the behavior checked? Link relevant tests and update the spec's code links when implementing a feature.

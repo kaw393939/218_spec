@@ -1,36 +1,30 @@
 # IS218 Program Specs
 
-A VitePress workspace for reviewing program specifications.
+Short plans and feature tracking for personal projects.
 
-**Published site:** https://kaw393939.github.io/218_spec/
+**Site:** https://kaw393939.github.io/218_spec/
 
-## Local development
+Start with the [personal link library spec](docs/specs/link-library.md). Its five features link to GitHub issues; code and test links will be added during implementation. No application code has been written yet.
 
-Use Node.js 22 or newer (GitHub Actions uses Node.js 24).
+## Run the docs
+
+Use Node.js 22 or newer.
 
 ```sh
 npm ci
 npm run docs:dev
 ```
 
-## Build and preview
+## Publish
 
 ```sh
 npm run docs:build
-npm run docs:preview
 ```
 
-## Add a specification
+Push to `main` to publish through GitHub Actions. Pull requests also run the build.
 
-1. Copy `docs/specs/template.md` to a new file under `docs/specs/`.
-2. Fill in requirements and acceptance scenarios.
-3. Add a link and review status in `docs/specs/index.md`.
-4. Open a pull request and follow `docs/review/index.md`.
+## Add a project
 
-Local search, a review guide, and GitHub edit links are included. No program specifications have been imported yet.
+Copy `docs/specs/template.md`, add the project to `docs/specs/index.md` and the sidebar in `docs/.vitepress/config.mts`, then follow `docs/review/index.md`.
 
-## Publishing
-
-GitHub Pages uses **GitHub Actions** as its build source. `.github/workflows/deploy.yml` validates pull requests and publishes pushes to `main`. Build output and dependencies stay out of Git.
-
-The base path is `/218_spec/`. Update it if the repository is renamed.
+The GitHub Pages base path is `/218_spec/`.

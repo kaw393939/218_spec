@@ -1,27 +1,23 @@
 ---
 layout: home
 hero:
-  name: IS218
-  text: Clear specs. Better programs.
-  tagline: Our shared home for program specifications, design decisions, and thoughtful review before implementation.
+  name: IS218 Program Specs
+  text: Small projects. Clear plans.
+  tagline: What we are building, what it should do, and where the work lives.
   actions:
     - theme: brand
-      text: Browse specifications
-      link: /specs/
+      text: Personal link library
+      link: /specs/link-library
     - theme: alt
-      text: Start a review
-      link: /review/
+      text: All projects
+      link: /specs/
 features:
-  - title: Define the behavior
-    details: Make the problem, users, requirements, and boundaries explicit before writing code.
-    link: /specs/template
-    linkText: Use the template
-  - title: Review together
-    details: Discuss requirements in GitHub, record decisions, and keep feedback attached to proposed changes.
-    link: /review/
-    linkText: Follow the review process
-  - title: Keep one shared reference
-    details: Read the latest published specifications here. Every update to main rebuilds this site automatically.
-    link: /specs/
-    linkText: Open the directory
+  - title: Read the plan
+    details: Short features and clear examples of what done looks like.
+    link: /specs/link-library
+    linkText: View the project
+  - title: Follow the work
+    details: Each feature connects to its GitHub issue, then its code and tests as we build it.
+    link: https://github.com/kaw393939/218_spec/issues
+    linkText: Open issues
 ---
