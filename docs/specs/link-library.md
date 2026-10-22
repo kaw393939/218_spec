@@ -57,7 +57,7 @@ Each feature has one issue. As implementation lands, add its pull request, sourc
 
 | Feature | Issue | Implementation | Verification |
 | --- | --- | --- | --- |
-| LINK-001 | [#1](https://github.com/kaw393939/218_spec/issues/1) | [Server](https://github.com/kaw393939/218_spec/blob/main/app/server.js), [SQLite storage](https://github.com/kaw393939/218_spec/blob/main/app/store.js), [form](https://github.com/kaw393939/218_spec/blob/main/app/public/app.js) | [Acceptance tests](https://github.com/kaw393939/218_spec/blob/main/test/link-001.test.js) · `npm test` |
+| LINK-001 | [#1](https://github.com/kaw393939/218_spec/issues/1) | [PR #6](https://github.com/kaw393939/218_spec/pull/6), [Server](https://github.com/kaw393939/218_spec/blob/main/app/server.js), [SQLite storage](https://github.com/kaw393939/218_spec/blob/main/app/store.js), [form](https://github.com/kaw393939/218_spec/blob/main/app/public/app.js) | [Acceptance tests](https://github.com/kaw393939/218_spec/blob/main/test/link-001.test.js) · `npm test` |
 | LINK-002 | [#2](https://github.com/kaw393939/218_spec/issues/2) | Not implemented | Not verified |
 | LINK-003 | [#3](https://github.com/kaw393939/218_spec/issues/3) | Not implemented | Not verified |
 | LINK-004 | [#4](https://github.com/kaw393939/218_spec/issues/4) | Not implemented | Not verified |
