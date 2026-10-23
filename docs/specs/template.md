@@ -1,29 +1,36 @@
-# Project name
+# Short spec template
 
-Copy this page and fill in just enough to discuss the next small change with AI.
+For the first exercise, use the supplied [practice spec](./practice). For a later project, create a file called `docs/specs/my-project.md` in your workspace's file list. Use the copy button on the block below and paste into that file; replace the bracketed text.
+
+````md
+# [Project name]
 
 ## Purpose
 
-Who is this for, and what should it help them do? One or two sentences.
+[Who is this for, and what should it help them do?]
 
-## Features
+## Next feature
 
-| ID | What the user can do | Expected result |
-| --- | --- | --- |
-| PROJECT-001 | Describe one small capability. | Describe what you should see when it works. |
+ID: PROJECT-001
+Change: [One small capability.]
+Expected result: [What should I see when it works?]
 
 ## Examples to try
 
-For the next feature, describe a normal use and any important error or repeat action. Give an input or action and the expected result.
+- [Action or input] → [Expected result]
+- [An important error or repeat action] → [Expected result]
 
 ## Decisions and limits
 
-Record the few agreed choices that matter. Say what can wait. Put unanswered questions here until resolved.
+[Agreed choices, what can wait, and unanswered questions.]
 
 ## Work and checks
 
-| Feature | Issue | Implementation | How to check |
-| --- | --- | --- | --- |
-| PROJECT-001 | Add the issue link. | Not implemented | Not verified |
+Issue: [Add your own issue URL.]
+Implementation: Not implemented.
+Checks: Not verified.
+````
 
-Add PR, code, and relevant test links when they exist. Keep this page current as decisions change.
+`PROJECT-001` is an example feature ID. Replace PROJECT with a short project name, such as CALC-001 for a calculator. Keep the ID as the feature changes; GitHub's issue number is separate.
+
+When work is complete, replace the last three lines with links and the checks actually performed. See [Keep the work visible](../review/) for the connections.

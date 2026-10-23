@@ -1,38 +1,34 @@
 # Start here
 
-Practice guiding AI through one small change. The aim is to get comfortable describing what you want, discussing it, and checking the result.
+Practice one small change with AI: **add a helpful sentence below the Note box** in the example app. You do not need to build the rest of the link library.
 
-Use the AI coding tool available in your class. Keep the project in GitHub and the specification in ordinary Markdown. No special spec tool or AI API key is needed for this exercise.
+## Before you begin
+
+Use **ChatGPT desktop** to discuss the task, **Codex** to work on the local project, and **VS Code** to inspect files and run the app. You also need a GitHub account.
+
+**First:** follow [Setup](./setup). You are ready when the app opens and Codex can identify the project files. No OpenAI API key is needed.
 
 ## Follow one cycle
 
-1. **Read the intention.** Start with the instructor's project spec. Ask AI to explain anything unclear.
-2. **Discuss one change.** Say what you want. Ask AI to identify missing decisions and suggest a small plan. Read it and resolve questions before implementation.
-3. **Write a short issue.** Include the feature ID, a link to the spec, and a few examples of what should happen.
-4. **Build the change.** Ask AI to implement that issue. Use a branch and keep unrelated work out of the change.
-5. **Try it together.** Open the result, try the examples, and inspect the changed files. Ask for an explanation where needed. Give specific feedback and repeat until it behaves as intended.
-6. **Keep the result visible.** Link the issue in a pull request. Update the spec if a decision changed, add code and check links, then review and merge.
+1. **Describe:** read the supplied [practice spec](./specs/practice).
+2. **Discuss:** ask AI for a short plan; resolve anything unclear before editing.
+3. **Record:** create the supplied issue in your own repository.
+4. **Build:** ask AI to make only that change on a branch, a separate version of your work.
+5. **Check:** try the result and give specific feedback if it differs from the spec.
+6. **Keep:** review the changed files in a pull request, then merge into your own main version.
 
-Start by watching the instructor complete a cycle. Then repeat it with one small change of your own. The [worked example](./example) shows how the pieces connect.
+Follow [Your first change](./practice) for the exact steps and prompts. Watch the instructor demonstrate a cycle first if you are doing this in class.
 
-## A prompt to begin
+## What belongs to you?
 
-> Read this project spec and the relevant existing files. Help me choose one small change. Explain what it should do, identify any questions, and propose a short plan before editing code.
+The instructor's [completed LINK-001 example](./example) shows work already done. Your practice task is **PRACTICE-001**, in your own fork (a copy of this repository under your GitHub account). Your issue and pull request go there too.
 
-When the plan is clear:
+Later, use the same cycle for your class project:
 
-> Implement only the agreed issue. Use the existing project conventions. Run the relevant checks, then show me what changed and how I can try it myself.
+| Class | Practice setting |
+| --- | --- |
+| IS117 | Plain white T-shirt ecommerce site |
+| IS218 | Four-function web calculator |
+| IS373 | Investigate an existing Docker/CI/CD site with a real domain |
 
-If the result needs work, describe what you observed: “Submitting an empty field shows a result of zero. Show a message asking for a number instead.”
-
-## Same process, different projects
-
-| Class | Practice project | Example of a small task |
-| --- | --- | --- |
-| IS117 | Plain white T-shirt ecommerce site | Revise the product page to express the chosen brand direction. |
-| IS218 | Four-function web calculator | Show a clear message when dividing by zero. |
-| IS373 | Investigate an existing Docker-hosted site with CI/CD and a real domain | Trace how one visible page change reaches the public site. |
-
-These are practice settings, not a requirement to build every feature at once. This repository's link library is the shared worked example; it is not the IS218 calculator assignment.
-
-Continue with [the worked example](./example), or copy the [short spec template](./specs/template).
+The link library is a shared demonstration, not the calculator assignment. [Background and further reading](./background) are optional; you can return to them later.

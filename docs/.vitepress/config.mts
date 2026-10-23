@@ -16,14 +16,18 @@ export default defineConfig({
     sidebar: [
       { text: 'Practice', items: [
         { text: 'Start here', link: '/start' },
+        { text: 'Setup', link: '/setup' },
+        { text: 'Your first change', link: '/practice' },
         { text: 'Worked example', link: '/example' },
         { text: 'Keep the work visible', link: '/review/' }
       ] },
       { text: 'Reference', items: [
         { text: 'Background and reading', link: '/background' },
+        { text: 'Practice spec', link: '/specs/practice' },
         { text: 'Short spec template', link: '/specs/template' },
         { text: 'Personal link library', link: '/specs/link-library' },
-        { text: 'Project specs', link: '/specs/' }
+        { text: 'Project specs', link: '/specs/' },
+        { text: 'Maintaining this website', link: '/contributing' }
       ] }
     ],
     search: { provider: 'local' },

@@ -19,8 +19,4 @@ Record decisions beside the affected feature. Update an existing description whe
 
 A useful pull request says what changed, links its issue, and explains how you checked it. A long chat transcript is unnecessary.
 
-## Maintain this website
-
-All content is Markdown under `docs/`. Run `npm run docs:build` before publishing. Pushes to `main` publish through [GitHub Actions](https://github.com/kaw393939/218_spec/actions/workflows/deploy.yml); pull requests validate the build. Small documentation edits can go directly to `main`.
-
-[See the worked example](../example) · [Copy the spec template](../specs/template) · [Open issues](https://github.com/kaw393939/218_spec/issues)
+[Follow your first change](../practice) · [See the worked example](../example) · [Copy the spec template](../specs/template) · [Open issues](https://github.com/kaw393939/218_spec/issues)

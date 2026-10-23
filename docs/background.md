@@ -1,6 +1,6 @@
 # Background and further reading
 
-An LLM generates responses from instructions and available context. A coding tool can also let it read files, edit code, and run commands. Useful collaboration means giving it a clear task and checking what it produces.
+A large language model (LLM) generates responses from instructions and available context. A coding tool can also let it read files, edit code, and run commands. Useful collaboration means giving it a clear task and checking what it produces.
 
 ## Why write a short spec?
 

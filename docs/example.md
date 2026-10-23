@@ -1,5 +1,7 @@
 # Worked example: save a link
 
+**Instructor demonstration, already completed.** To do your own task, follow [Setup](./setup) and [Your first change](./practice).
+
 The [personal link library](./specs/link-library) is our example of a small project built with AI. Only **LINK-001: Save a link** is implemented. The remaining features are plans.
 
 This is a walkthrough of the recorded artifacts, not a transcript of the original conversation.
@@ -34,7 +36,7 @@ Ask AI to explain one part at a time: “Where does duplicate detection happen, 
 
 ## 4. Try the result
 
-Use Node.js 22.13 or newer. In the repository terminal:
+First follow [Setup](./setup). In a prepared local workspace, use Node.js 22.13 or newer and run these commands in its terminal (the command panel opened inside the project folder):
 
 ```sh
 npm ci
@@ -51,4 +53,4 @@ The GitHub Pages website hosts these instructions; it does not run the applicati
 
 The [feature table](./specs/link-library#work-and-code) links the spec, issue, PR, code, and tests. Someone returning later can find the current behavior without reading the whole chat.
 
-For your own practice, follow [one cycle](./start#follow-one-cycle) with a small change agreed with your instructor. You do not need to implement the rest of the link library.
+For your own practice, follow the supplied [first change](./practice). You do not need to implement the rest of the link library.

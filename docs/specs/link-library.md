@@ -1,5 +1,7 @@
 # Personal link library
 
+**Instructor reference, not your task list.** Begin with [Start here](../start) for your own practice.
+
 Our worked example: save links now; add summaries and organization later. [Follow the walkthrough](../example).
 
 **For:** one person. **Progress:** LINK-001 is implemented locally. Page reading, summaries, search, and editing are still planned.

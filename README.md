@@ -4,7 +4,7 @@ A short guided exercise in collaborating with AI through Markdown specs, focused
 
 **Site:** https://kaw393939.github.io/218_spec/
 
-Start with the [exercise](docs/start.md), follow the [worked example](docs/example.md), and explore the optional [background and further reading](docs/background.md).
+Start with the [exercise](docs/start.md), complete [setup](docs/setup.md), try [your first change](docs/practice.md), follow the [worked example](docs/example.md), and explore the optional [background and further reading](docs/background.md).
 
 The [personal link library spec](docs/specs/link-library.md) describes the example project. Its five features link to GitHub issues, code, and tests. LINK-001 is implemented: save URLs and notes in SQLite, validate input, and reopen existing entries for duplicate URLs. Other features are planned.
 

@@ -29,12 +29,12 @@ jobs:
       - run: npm test
       - run: npm run docs:build
       - uses: actions/upload-pages-artifact@v3
-        if: github.event_name != 'pull_request'
+        if: github.repository == 'kaw393939/218_spec' && github.event_name != 'pull_request'
         with:
           path: docs/.vitepress/dist
 
   deploy:
-    if: github.event_name != 'pull_request'
+    if: github.repository == 'kaw393939/218_spec' && github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
     permissions:
