@@ -1,6 +1,6 @@
 # Short spec template
 
-For the first exercise, use the supplied [practice spec](./practice). For a later project, create a file called `docs/specs/my-project.md` in your workspace's file list. Use the copy button on the block below and paste into that file; replace the bracketed text.
+For the first exercise, use the supplied [practice spec](./practice). For a later project, create a file called `docs/specs/my-project.md` using **New File** in VS Code's Explorer (the left-hand file list). Use the copy button on the block below and paste into that file; replace the bracketed text.
 
 ````md
 # [Project name]

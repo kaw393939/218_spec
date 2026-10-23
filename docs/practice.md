@@ -16,7 +16,7 @@ In **ChatGPT desktop**, attach the file `docs/specs/practice.md` from your local
 
 ChatGPT can discuss the supplied spec. **Codex** will inspect the actual implementation before editing it.
 
-Read the reply. It should describe a help-text change, not new app features. If it proposes extra work, reply: “Keep this to the help text and its connection to the Note field.”
+Read the reply. A sufficient plan is to add the sentence below Note, connect it to that field in HTML, keep saving unchanged, then run the existing checks and try the form. If it proposes extra work, reply: “Keep this to the help text and its connection to the Note field.”
 
 ## 2. Record your task
 
