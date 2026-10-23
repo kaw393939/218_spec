@@ -1,10 +1,10 @@
 # Personal link library
 
-Paste a link. Get a useful summary. Find it later.
+Our worked example: save links now; add summaries and organization later. [Follow the walkthrough](../example).
 
 **For:** one person. **Progress:** LINK-001 is implemented locally. Page reading, summaries, search, and editing are still planned.
 
-## How it works
+## Intended flow
 
 1. Paste a URL and optionally add a note. Saving and duplicate detection work now.
 2. The app saves it, reads the page, and uses OpenAI to suggest a category, topic tags, and a short summary.
@@ -63,9 +63,10 @@ Each feature has one issue. As implementation lands, add its pull request, sourc
 | LINK-004 | [#4](https://github.com/kaw393939/218_spec/issues/4) | Not implemented | Not verified |
 | LINK-005 | [#5](https://github.com/kaw393939/218_spec/issues/5) | Not implemented | Not verified |
 
-## Decisions still to make
+## Decisions
 
-- Backend: Node.js with its built-in HTTP server and SQLite support. No application framework needed for saving links.
-- Where to host the app after the local version works.
+- **Agreed:** Node.js with its built-in HTTP server and SQLite support. No application framework needed for saving links.
+- **Agreed:** Duplicate submissions preserve the original note so saving again does not overwrite it.
+- **Open:** Where to host the app after the local version works.
 
 Next step: LINK-002, reading a saved page. LINK-003 will add categorization and summaries afterward.

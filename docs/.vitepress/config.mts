@@ -1,26 +1,29 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'IS218 Program Specs',
-  description: 'A shared workspace for writing, discussing, and reviewing program specifications.',
+  title: 'Working with AI',
+  description: 'A short guided exercise in working with AI using Markdown specs, GitHub issues, and small changes.',
   lang: 'en-US',
   base: '/218_spec/',
   lastUpdated: true,
   themeConfig: {
     nav: [
-      { text: 'Projects', link: '/specs/' },
-      { text: 'How we work', link: '/review/' },
+      { text: 'Start here', link: '/start' },
+      { text: 'Worked example', link: '/example' },
+      { text: 'Background', link: '/background' },
       { text: 'GitHub', link: 'https://github.com/kaw393939/218_spec' }
     ],
     sidebar: [
-      { text: 'Workspace', items: [
-        { text: 'Overview', link: '/' },
-        { text: 'All projects', link: '/specs/' },
-        { text: 'Personal link library', link: '/specs/link-library' }
+      { text: 'Practice', items: [
+        { text: 'Start here', link: '/start' },
+        { text: 'Worked example', link: '/example' },
+        { text: 'Keep the work visible', link: '/review/' }
       ] },
-      { text: 'Contributing', items: [
-        { text: 'How we work', link: '/review/' },
-        { text: 'Short spec template', link: '/specs/template' }
+      { text: 'Reference', items: [
+        { text: 'Background and reading', link: '/background' },
+        { text: 'Short spec template', link: '/specs/template' },
+        { text: 'Personal link library', link: '/specs/link-library' },
+        { text: 'Project specs', link: '/specs/' }
       ] }
     ],
     search: { provider: 'local' },
@@ -30,6 +33,6 @@ export default defineConfig({
       text: 'Edit this page on GitHub'
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/kaw393939/218_spec' }],
-    footer: { message: 'IS218 · Small projects. Clear plans.' }
+    footer: { message: 'Describe. Build. Check. · Practice working with AI.' }
   }
 })

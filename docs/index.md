@@ -1,23 +1,27 @@
 ---
 layout: home
 hero:
-  name: IS218 Program Specs
-  text: Small projects. Clear plans.
-  tagline: What we are building, what it should do, and where the work lives.
+  name: Working with AI
+  text: Describe. Build. Check.
+  tagline: Practice a simple way to guide AI through one small change at a time.
   actions:
     - theme: brand
-      text: Personal link library
-      link: /specs/link-library
+      text: Start the exercise
+      link: /start
     - theme: alt
-      text: All projects
-      link: /specs/
+      text: See a worked example
+      link: /example
 features:
-  - title: Read the plan
-    details: Short features and clear examples of what done looks like.
+  - title: Write down the intention
+    details: A short Markdown spec gives you and the AI something clear to work from.
+    link: /specs/template
+    linkText: Use the template
+  - title: Keep the work visible
+    details: Connect a feature to its issue, implementation, and checks.
     link: /specs/link-library
-    linkText: View the project
-  - title: Follow the work
-    details: Each feature connects to its GitHub issue, then its code and tests as we build it.
-    link: https://github.com/kaw393939/218_spec/issues
-    linkText: Open issues
+    linkText: Explore the example project
+  - title: Understand the approach
+    details: Brief background on LLMs, context, and how this relates to industry practice.
+    link: /background
+    linkText: Background and reading
 ---

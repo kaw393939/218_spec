@@ -1,37 +1,29 @@
-# Project spec template
+# Project name
 
-Copy this page and keep it brief.
+Copy this page and fill in just enough to discuss the next small change with AI.
 
 ## Purpose
 
-One sentence: who is this for, and what should it help them do?
-
-## User flow
-
-Describe the main task in three to five steps.
+Who is this for, and what should it help them do? One or two sentences.
 
 ## Features
 
-| ID | Feature | Done when |
+| ID | What the user can do | Expected result |
 | --- | --- | --- |
-| PROJECT-001 | Describe one user capability | State an observable result. |
+| PROJECT-001 | Describe one small capability. | Describe what you should see when it works. |
 
-## Technical choices
+## Examples to try
 
-List the few choices that matter: language, storage, external services, and hosting.
+For the next feature, describe a normal use and any important error or repeat action. Give an input or action and the expected result.
 
-## Out of scope
+## Decisions and limits
 
-List what can wait.
+Record the few agreed choices that matter. Say what can wait. Put unanswered questions here until resolved.
 
-## Work and code
+## Work and checks
 
-| Feature | Issue | Implementation | Verification |
+| Feature | Issue | Implementation | How to check |
 | --- | --- | --- | --- |
-| PROJECT-001 | Link the issue | Not implemented | Not verified |
+| PROJECT-001 | Add the issue link. | Not implemented | Not verified |
 
-Add pull request, code, and test links when they exist.
-
-## Open questions
-
-Record only decisions that still need an answer.
+Add PR, code, and relevant test links when they exist. Keep this page current as decisions change.
