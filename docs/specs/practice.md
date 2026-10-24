@@ -1,6 +1,6 @@
 # Practice: explain the note limit
 
-This is the supplied first task for [Your first change](../practice). It is planned in the instructor's starter; students implement it in their own forks.
+This is the supplied first task for [Your first change](../practice). It is planned in the instructor's starter; students implement it in their own repositories.
 
 ## Purpose
 
@@ -30,4 +30,4 @@ The relevant file is `app/public/index.html`. Start with a plan before editing.
 | --- | --- | --- | --- |
 | PRACTICE-001 | Add your own issue URL. | Not implemented in this starter. | Not verified for your change. |
 
-In your fork, replace this row with your issue, implementation link, and what you actually checked. LINK-001's existing tests check saving; they do not establish that the new help text appears correctly.
+In your repository, replace this row with your issue, implementation link, and what you actually checked. LINK-001's existing tests check saving; they do not establish that the new help text appears correctly.

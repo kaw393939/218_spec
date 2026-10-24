@@ -26,11 +26,11 @@ Each should print a version, with Node.js showing `v24...` (22.13 or newer also 
 
 ## 2. Make your copy
 
-Sign in to GitHub. Open [the starter repository](https://github.com/kaw393939/218_spec), select **Fork**, then **Create fork** with your account as the owner. Keep the name `218_spec`.
+Sign in to GitHub. On [the starter repository](https://github.com/kaw393939/218_spec), choose **Use this template → Create a new repository**. Select your account, name the repository `ai-practice`, choose **Public**, and leave **Include all branches** unchecked. Select **Create repository from template**.
 
-The address should now be `github.com/YOUR-USERNAME/218_spec`, not `kaw393939/218_spec`. YOUR-USERNAME means your actual GitHub username. In **your fork**, open **Settings → General → Features** and enable **Issues** if needed. Open your fork’s **Actions** tab and enable workflows if GitHub asks; this lets your practice PR run its checks.
+You now have your own repository. Its address should be `github.com/YOUR-USERNAME/ai-practice`. In that repository, copy **Code → HTTPS**. In VS Code, open **View → Command Palette**, choose **Git: Clone**, paste the URL, select a local location, and open the cloned folder.
 
-On your fork's **Code → HTTPS** menu, copy its clone URL. In VS Code, open the Command Palette (**View → Command Palette**), choose **Git: Clone**, paste that URL, and choose a local location. When asked, open the cloned repository. [VS Code cloning guide](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git)
+**Already started?** Reopen your existing local folder and continue your issue. Do not clone the instructor's repository over your work or create a second copy. If VS Code offers to open an existing clone, check its folder before accepting.
 
 **Check:** the file list shows `app/`, `docs/`, and `package.json`. This is your local project folder. In VS Code, open a new terminal inside it and run:
 
@@ -53,7 +53,7 @@ Wait for `Personal link library: http://127.0.0.1:3000`. Leave this terminal run
 
 ## 4. Open the same folder in Codex
 
-Open **Codex** from ChatGPT desktop and add/open a **local project** using the same `218_spec` folder that is open in VS Code. Start a local chat working on this computer, in that folder. Use the current folder rather than a separate worktree or cloud environment for this first exercise. [Local projects](https://learn.chatgpt.com/docs/projects), [Codex environments](https://learn.chatgpt.com/docs/environments/modes)
+Open **Codex** from ChatGPT desktop and add/open a **local project** using the same cloned folder that is open in VS Code. Start a local chat working on this computer, in that folder. Use the current folder rather than a separate worktree or cloud environment for this first exercise. [Local projects](https://learn.chatgpt.com/docs/projects), [Codex environments](https://learn.chatgpt.com/docs/environments/modes)
 
 Paste into **Codex**:
 
@@ -65,10 +65,18 @@ The reply should identify PRACTICE-001 and `app/public/index.html`. Open that fi
 
 Check these together with your instructor before starting the exercise:
 
-- Your GitHub copy has **Issues** and **Actions** available, and `origin` points to your account.
+- Your repository has **Issues** and **Actions** tabs, and `origin` points to your account. If a tab or workflow is unavailable, ask your instructor before starting.
 - The app opens in your browser. Keep its address handy.
 - Codex can read `app/public/index.html` from the folder open in VS Code.
-- Your Git name/email and GitHub sign-in are set up so you can commit and push with your own account.
+- In a second VS Code terminal, run the checks below. The first two should show your Git name and email. The last checks push access without changing GitHub:
+
+```sh
+git config user.name
+git config user.email
+git push --dry-run origin main
+```
+
+**Success:** a name, an email, and `Everything up-to-date`. If a value is blank, ask Codex to help configure your own Git identity. If GitHub requests sign-in, use your account and retry. For a rejected push or another error, share the message with your instructor; do not force-push.
 
 If one is missing, ask for setup help here. The exercise begins with a working workspace, not with troubleshooting installations.
 

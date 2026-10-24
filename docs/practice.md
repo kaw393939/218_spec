@@ -20,7 +20,7 @@ Read the reply. A sufficient plan is to add the sentence below Note, connect it 
 
 ## 2. Record your task
 
-In a separate GitHub tab, open **your fork → Issues → New issue → Small feature or change**. If Issues is missing, see [Setup](./setup#_2-make-your-copy).
+In a separate GitHub tab, open **your repository → Issues → New issue → Small feature or change**. If Issues is missing, see [Setup](./setup#_2-make-your-copy).
 
 Use this title:
 
@@ -52,6 +52,7 @@ Keep saving, validation, and duplicate behavior unchanged.
 ```text
 Open the app: the help appears below Note, even before typing.
 Save https://example.com with a note: saving still works.
+Save the same URL with a different note: the original note stays unchanged.
 ```
 
 Create the issue and copy its URL. **PRACTICE-001** is our feature name; GitHub assigns its own issue number, which may differ. The instructor's closed issue #1 is only a historical example.
@@ -68,9 +69,11 @@ This creates your working branch. If you are returning to a branch you already c
 
 In **Codex**, paste the short plan you agreed in ChatGPT, then this prompt. Replace the final line with your actual issue URL:
 
-> Implement only PRACTICE-001 from docs/specs/practice.md using the plan pasted above. Inspect the existing HTML first and raise any conflict with the plan before editing. Update that spec with my issue URL, code link, and checks actually performed. Keep the tracking row short. Use a GitHub URL for the changed source file, not a relative documentation link. Run npm test and npm run docs:build. Show the changed files and tell me how to check the page. Do not commit or push yet.
+> Implement only PRACTICE-001 from docs/specs/practice.md using the plan pasted above. Inspect the existing HTML first and raise any conflict with the plan before editing. Update that spec with my issue URL, code link, and checks actually performed. Keep the tracking row short; record results, not temporary status such as “not pushed.” Use a GitHub URL for the changed source file, not a relative documentation link. Run npm test and npm run docs:build. Show the changed files and tell me how to check the page. Do not commit or push yet.
 >
 > My issue URL: PASTE YOUR ISSUE URL HERE
+>
+> My app start command and browser address: PASTE WHAT WORKED IN SETUP HERE
 
 Review requests to edit files or run commands before accepting them. If you only receive suggested code in ChatGPT, switch to Codex in the local project and ask it to apply the agreed change there.
 
@@ -81,7 +84,7 @@ Review requests to edit files or run commands before accepting them. If you only
 - The exact sentence appears below Note before you type anything.
 - Save `https://example.com` with a short note. The entry appears. If already saved, reopening the existing entry is expected.
 - Submit that same URL with a different note. The existing entry should keep its original note.
-- Read the diff (the before/after changes) in VS Code's **Source Control** view. Ask AI to explain anything unclear, including how it connected the help text to the field.
+- Read the diff (the before/after changes) in VS Code's **Source Control** view. Ask AI to explain anything unclear, including how it connected the help text to the field. If the terminal hides the diff, close the panel with its **×** button; this does not stop the app.
 
 If needed, say what you observed and what should change: “The help appears above Note. Put it directly below the box.” Recheck after the revision. A passing test result is useful; also try the page yourself.
 
@@ -91,7 +94,7 @@ Tell Codex what you actually observed and ask it to record that in the spec. A s
 PRACTICE-001 | my issue URL | GitHub URL of the HTML on my branch | npm test: 6 passed; docs build passed; I checked help text, saving, and duplicate note preservation in the browser.
 ```
 
-Use your real links and results. Ask Codex to make the source link point to `app/public/index.html` on your fork's `practice-001-note-help` branch. Do not report a browser check you have not done.
+Use your real links and results. Ask Codex to make the source link point to `app/public/index.html` on your repository's `practice-001-note-help` branch. Do not report a browser check you have not done.
 
 ## 5. Review and keep your work
 
@@ -105,8 +108,8 @@ git commit -m "PRACTICE-001: explain the note limit"
 git push -u origin practice-001-note-help
 ```
 
-Open **your fork → Pull requests → New pull request**. Check both the **base repository** and **head repository** are your own fork. Use base `main` and compare `practice-001-note-help`; do not send this practice change to the instructor's repository.
+Open **your repository → Pull requests → New pull request**. Use base `main` and compare `practice-001-note-help`. The repository name at the top should be yours.
 
-Describe what changed and what you tried. Add `Closes #N`, replacing N with your own issue's number. Create the PR, inspect **Files changed**, and wait for the build checks. A passing build is required; a skipped deployment is expected because your fork does not publish this site. If no checks appear, check that workflows were enabled in Setup and ask your instructor for help before merging. Merge when the change matches the spec and the checks pass. Verify the issue is closed.
+Describe what changed and what you tried. Add `Closes #N`, replacing N with your own issue's number. Create the PR, inspect **Files changed**, and wait for the build checks. A passing build is required; a skipped deployment is expected because your repository does not publish this site. If no checks appear, open your repository’s **Actions** tab, enable workflows if GitHub asks, and ask your instructor for help before merging. Merge when the change matches the spec and the checks pass. Verify the issue is closed.
 
-**This cycle is finished when:** your fork has a merged PR linked to your issue, the help text works, and the practice spec records your actual checks. No GitHub Pages deployment is required for the student copy. Stop the app terminal with Ctrl+C when done.
+**This cycle is finished when:** your repository has a merged PR linked to your issue, the help text works, and the practice spec records your actual checks. No GitHub Pages deployment is required for the student copy. Stop the app terminal with Ctrl+C when done.

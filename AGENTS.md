@@ -11,3 +11,5 @@ This is a small teaching project about collaborating with AI through ordinary Ma
 - Build docs with `npm run docs:build`. Run `npm test` for application changes; `npm start` runs the local app.
 - GitHub Pages serves docs only. The app uses Node.js and SQLite. LINK-001 saves links; page reading and AI processing remain planned.
 - AI-assisted coding does not require adding AI to the application. Keep secrets and local SQLite data out of Git.
+
+- Student entry: create a repository from this GitHub template, then clone their own copy. Keep instructor `main` as the unfinished PRACTICE-001 starter; put completed practice trials in separate repositories.

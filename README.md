@@ -1,47 +1,24 @@
 # Working with AI
 
-A short guided exercise in collaborating with AI through Markdown specs, focused GitHub issues, and small changes. Includes a working link-saving example.
+Practice one small change: **add help text below the Note box** in a working link-saving app. Learn to describe a change, discuss a plan, review AI edits, and check the result.
 
-**Site:** https://kaw393939.github.io/218_spec/
+Use **ChatGPT desktop, Codex, and VS Code**. No OpenAI API key is needed.
 
-Start with the [exercise](docs/start.md), complete [setup](docs/setup.md), try [your first change](docs/practice.md), follow the [worked example](docs/example.md), and explore the optional [background and further reading](docs/background.md).
+## Start here
 
-The [personal link library spec](docs/specs/link-library.md) describes the example project. Its five features link to GitHub issues, code, and tests. LINK-001 is implemented: save URLs and notes in SQLite, validate input, and reopen existing entries for duplicate URLs. Other features are planned.
+1. On [the starter repository](https://github.com/kaw393939/218_spec), choose **Use this template → Create a new repository**. Select your account, name it `ai-practice`, choose **Public**, and leave **Include all branches** unchecked.
+2. In **your new repository**, copy **Code → HTTPS**. In VS Code, choose **Git: Clone** from **View → Command Palette**, paste that URL, select a location, and open the cloned folder.
+3. Follow [Setup](https://kaw393939.github.io/218_spec/setup.html) to run the app and check access.
+4. Follow [Your first change](https://kaw393939.github.io/218_spec/practice.html): discuss → issue → AI edit → check → pull request.
 
-## Run the application
+**Create your copy on GitHub, then clone that copy to your computer.** Your issues and PRs belong in your own repository. Already started? Reopen your existing folder and continue your issue; do not create another copy.
 
-Use Node.js 22.13 or newer (Node.js 24 is used in CI).
+## What you start with
 
-```sh
-npm ci
-npm start
-```
+- `main` contains the working app and the unfinished **PRACTICE-001** spec. The new help sentence should be absent.
+- `docs/specs/practice.md` describes your task; `app/public/index.html` is the file you will change.
+- The [completed LINK-001 example](https://kaw393939.github.io/218_spec/example.html) is background, not another task to implement.
 
-Open http://127.0.0.1:3000. The app binds to your computer only. SQLite data lives in `data/links.sqlite` and is ignored by Git. Stop the app before copying the `data/` directory for a backup. `PORT` and `LINKS_DB_PATH` optionally change the port and database path.
+The [instructions site](https://kaw393939.github.io/218_spec/) serves documentation. Run the app locally with `npm ci`, then `npm start`; open the address printed in the terminal. Use Node.js 24 (22.13 or newer works).
 
-`npm run dev` restarts the server after code changes. `npm test` runs the LINK-001 acceptance tests against isolated databases. Saving works without an API key; page reading and AI processing are not implemented yet.
-
-GitHub Pages serves documentation only; run the application locally.
-
-## Run the docs
-
-Use Node.js 22.13 or newer.
-
-```sh
-npm ci
-npm run docs:dev
-```
-
-## Publish
-
-```sh
-npm run docs:build
-```
-
-Push to `main` to publish through GitHub Actions. Pull requests also run the build.
-
-## Add a project
-
-Copy `docs/specs/template.md`, add the project to `docs/specs/index.md` and the sidebar in `docs/.vitepress/config.mts`, then follow `docs/review/index.md`.
-
-The GitHub Pages base path is `/218_spec/`.
+Your copy runs build checks but does **not** publish a website. Only this instructor repository publishes GitHub Pages. Website maintenance instructions are in [Maintaining this website](docs/contributing.md).

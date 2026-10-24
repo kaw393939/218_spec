@@ -21,7 +21,7 @@ Follow [Your first change](./practice) for the exact steps and prompts. In class
 
 ## What belongs to you?
 
-The instructor's [completed LINK-001 example](./example) shows work already done. Your practice task is **PRACTICE-001**, in your own fork (a copy of this repository under your GitHub account). Your issue and pull request go there too.
+The instructor's [completed LINK-001 example](./example) shows work already done. Your practice task is **PRACTICE-001**, in your own repository created from the template. Your issue and pull request go there too.
 
 Later, use the same cycle for your class project:
 
