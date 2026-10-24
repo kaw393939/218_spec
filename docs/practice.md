@@ -16,7 +16,7 @@ That is **PRACTICE-001**. This small change rehearses how to guide AI and verify
 
 In **ChatGPT desktop**, attach `docs/specs/practice.md` from your cloned folder (or paste its contents). Ask:
 
-> Help me understand this task and agree a short plan. Do not code yet. Draft a short GitHub issue title and body with the feature ID, spec link, scope, and three examples to check.
+> Help me understand this task and agree a short plan. Do not code yet. Draft a short GitHub issue title and body with the feature ID, scope, and three examples to check. Use this spec link: https://kaw393939.github.io/218_spec/specs/practice.html
 
 Read the reply. Does it keep the task to help text below Note, connected to that field for assistive technology, with saving unchanged? Ask about anything unclear. Reject extra features. **You decide when the plan is ready.**
 
