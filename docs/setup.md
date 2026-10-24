@@ -30,7 +30,7 @@ Sign in to GitHub. On [the starter repository](https://github.com/kaw393939/218_
 
 You now have your own repository. Its address should be `github.com/YOUR-USERNAME/ai-practice`. In that repository, copy **Code → HTTPS**. In VS Code, open **View → Command Palette**, choose **Git: Clone**, paste the URL, select a local location, and open the cloned folder.
 
-**Already started?** Reopen your existing local folder and continue your issue. Do not clone the instructor's repository over your work or create a second copy. If VS Code offers to open an existing clone, check its folder before accepting.
+**Already have your GitHub copy?** Clone that repository. **Already have the local folder?** Reopen it and continue your issue. If VS Code offers to open an existing clone, check its folder before accepting.
 
 **Check:** the file list shows `app/`, `docs/`, and `package.json`. This is your local project folder. In VS Code, open a new terminal inside it and run:
 

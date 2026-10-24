@@ -11,7 +11,7 @@ Use **ChatGPT desktop, Codex, and VS Code**. No OpenAI API key is needed.
 3. Follow [Setup](https://kaw393939.github.io/218_spec/setup.html) to run the app and check access.
 4. Follow [Your first change](https://kaw393939.github.io/218_spec/practice.html): discuss → issue → AI edit → check → pull request.
 
-**Create your copy on GitHub, then clone that copy to your computer.** Your issues and PRs belong in your own repository. Already started? Reopen your existing folder and continue your issue; do not create another copy.
+**Create your copy on GitHub, then clone that copy to your computer.** Your issues and PRs belong in your own repository. **Already have your GitHub copy?** Start at step 2. **Already have the local folder?** Start at step 3; keep using that folder.
 
 ## What you start with
 
