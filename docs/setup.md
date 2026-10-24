@@ -8,7 +8,7 @@ next: false
 
 ## Missing a tool?
 
-Use your class installations of [ChatGPT desktop](https://learn.chatgpt.com/docs/app), [VS Code](https://code.visualstudio.com/), [Git](https://git-scm.com/install/), and [Node.js 24](https://nodejs.org/en/download). Sign in with your own accounts. Codex should work locally in the cloned project folder; [local project help](https://learn.chatgpt.com/docs/projects#use-local-projects-for-folders-and-codebases).
+Use your class installations of [ChatGPT desktop](https://learn.chatgpt.com/docs/app), [VS Code](https://code.visualstudio.com/), [Git](https://git-scm.com/install/), and [Node.js 24](https://nodejs.org/en/download), with your existing GitHub SSH setup. Sign in to the apps with your own accounts. Codex should work locally in the cloned project folder; [local project help](https://learn.chatgpt.com/docs/projects#use-local-projects-for-folders-and-codebases).
 
 In your class terminal, these should each print a version:
 
@@ -27,7 +27,8 @@ Node.js 22.13 or newer works. If a command is missing after installation, reopen
 - **Port 3000 is occupied (`EADDRINUSE`):** stop your earlier app with Ctrl+C if you recognize it. Otherwise leave it alone and use port 3001 below.
 - **The page still shows old HTML:** in this app's running terminal, press Ctrl+C, rerun its start command, then refresh the matching browser address.
 - **npm prints warnings:** look for whether the command completed. A warning alone is not a failed setup.
-- **Git name/email is blank, or push is rejected:** ask Codex or your instructor to help set up your own identity and GitHub sign-in. Do not force-push or use another person's credentials.
+- **Git name/email is blank:** ask Codex or your instructor to help configure your own Git identity.
+- **Clone or push says `Permission denied (publickey)`:** check that the repository's SSH address matches your copy, then ask your instructor to help with your existing class SSH setup. Do not force-push or replace your SSH keys as a workaround.
 - **Codex cannot find the files:** check that its local project and VS Code both use the folder printed by `pwd` in your project terminal.
 - **Issues or build checks are missing:** open your repository's Issues/Actions tabs. Enable workflows if GitHub asks; ask your instructor if unavailable.
 

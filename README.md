@@ -6,20 +6,20 @@ The small change lets you practice the whole cycle: agree on a plan with AI, ins
 
 ## 1. Get your copy
 
-Use your class setup: **ChatGPT desktop, Codex, VS Code, Git, and Node.js 24** (22.13+ works). No API key is needed. Missing a tool? Use [Setup help](https://kaw393939.github.io/218_spec/setup.html).
+Use your class setup: **ChatGPT desktop, Codex, VS Code, Git with GitHub SSH access, and Node.js 24** (22.13+ works). Keep using the SSH setup from class. No API key is needed. Missing a tool? Use [Setup help](https://kaw393939.github.io/218_spec/setup.html).
 
 On [the starter](https://github.com/kaw393939/218_spec), choose **Use this template → Create a new repository**. Select your account, name it `ai-practice`, choose **Public**, and leave **Include all branches** unchecked. If that name is taken, choose another name and use it in the commands below.
 
-In your class terminal, go to the folder where you keep projects. Replace `YOUR-USERNAME` (and the repository name if different):
+In your class terminal, go to the folder where you keep projects. Clone **your copy using SSH**. Replace `YOUR-USERNAME` (and the repository name if different):
 
 ```sh
-git clone https://github.com/YOUR-USERNAME/ai-practice.git
+git clone git@github.com:YOUR-USERNAME/ai-practice.git
 cd ai-practice
 git remote -v
 code .
 ```
 
-`origin` should point to your GitHub copy. If `code .` is unavailable, use **VS Code → File → Open Folder** and select the folder you just cloned. Already cloned your copy? Open that folder instead of cloning again.
+`git remote -v` should show `git@github.com:YOUR-USERNAME/ai-practice.git` for both fetch and push, with your actual username and repository name. If `code .` is unavailable, use **VS Code → File → Open Folder** and select the folder you just cloned. Already cloned your copy? Open that folder instead of cloning again.
 
 ## 2. Try the app
 

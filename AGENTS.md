@@ -13,3 +13,4 @@ This is a small teaching project about collaborating with AI through ordinary Ma
 - AI-assisted coding does not require adding AI to the application. Keep secrets and local SQLite data out of Git.
 
 - Student entry: create a repository from this GitHub template, then clone their own copy. Keep instructor `main` as the unfinished PRACTICE-001 starter; put completed practice trials in separate repositories.
+- Students already have GitHub SSH access configured in class. Use SSH clone URLs (`git@github.com:USERNAME/REPOSITORY.git`) and terminal Git in student instructions and trials.
