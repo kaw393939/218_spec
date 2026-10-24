@@ -20,7 +20,7 @@ Read the reply. A sufficient plan is to add the sentence below Note, connect it 
 
 ## 2. Record your task
 
-In a separate GitHub tab, open **your fork → Issues → New issue → Small feature or change**. If Issues is missing, see [Setup](./setup#_1-make-your-copy).
+In a separate GitHub tab, open **your fork → Issues → New issue → Small feature or change**. If Issues is missing, see [Setup](./setup#_2-make-your-copy).
 
 Use this title:
 
@@ -68,7 +68,7 @@ This creates your working branch. If you are returning to a branch you already c
 
 In **Codex**, paste the short plan you agreed in ChatGPT, then this prompt. Replace the final line with your actual issue URL:
 
-> Implement only PRACTICE-001 from docs/specs/practice.md using the plan pasted above. Inspect the existing HTML first and raise any conflict with the plan before editing. Update that spec with my issue URL, code link, and checks actually performed. Run npm test. Show the changed files and tell me how to check the page. Do not commit or push yet.
+> Implement only PRACTICE-001 from docs/specs/practice.md using the plan pasted above. Inspect the existing HTML first and raise any conflict with the plan before editing. Update that spec with my issue URL, code link, and checks actually performed. Keep the tracking row short. Use a GitHub URL for the changed source file, not a relative documentation link. Run npm test and npm run docs:build. Show the changed files and tell me how to check the page. Do not commit or push yet.
 >
 > My issue URL: PASTE YOUR ISSUE URL HERE
 
@@ -76,15 +76,26 @@ Review requests to edit files or run commands before accepting them. If you only
 
 ## 4. Check and give feedback
 
-Refresh the app tab. If the page has not changed, stop `npm start` with Ctrl+C and run it again, then refresh.
+**Restart the app after the edit:** in its running terminal, press Ctrl+C and rerun the same start command you used in Setup. Refresh the browser tab at the address printed by that terminal. Refresh alone will not load the changed HTML in this app.
 
 - The exact sentence appears below Note before you type anything.
 - Save `https://example.com` with a short note. The entry appears. If already saved, reopening the existing entry is expected.
+- Submit that same URL with a different note. The existing entry should keep its original note.
 - Read the diff (the before/after changes) in VS Code's **Source Control** view. Ask AI to explain anything unclear, including how it connected the help text to the field.
 
 If needed, say what you observed and what should change: “The help appears above Note. Put it directly below the box.” Recheck after the revision. A passing test result is useful; also try the page yourself.
 
+Tell Codex what you actually observed and ask it to record that in the spec. A short tracking row is enough:
+
+```text
+PRACTICE-001 | my issue URL | GitHub URL of the HTML on my branch | npm test: 6 passed; docs build passed; I checked help text, saving, and duplicate note preservation in the browser.
+```
+
+Use your real links and results. Ask Codex to make the source link point to `app/public/index.html` on your fork's `practice-001-note-help` branch. Do not report a browser check you have not done.
+
 ## 5. Review and keep your work
+
+In Source Control, expect changes to `app/public/index.html` and `docs/specs/practice.md`. If other files appear, ask Codex why before staging. The commands below stage only the two assignment files.
 
 In the second terminal:
 
@@ -96,6 +107,6 @@ git push -u origin practice-001-note-help
 
 Open **your fork → Pull requests → New pull request**. Check both the **base repository** and **head repository** are your own fork. Use base `main` and compare `practice-001-note-help`; do not send this practice change to the instructor's repository.
 
-Describe what changed and what you tried. Add `Closes #N`, replacing N with your own issue's number. Create the PR, inspect **Files changed**, and wait for the build checks. If no checks appear, check that workflows were enabled in Setup and ask your instructor for help before merging. Merge when the change matches the spec and the checks pass. Verify the issue is closed.
+Describe what changed and what you tried. Add `Closes #N`, replacing N with your own issue's number. Create the PR, inspect **Files changed**, and wait for the build checks. A passing build is required; a skipped deployment is expected because your fork does not publish this site. If no checks appear, check that workflows were enabled in Setup and ask your instructor for help before merging. Merge when the change matches the spec and the checks pass. Verify the issue is closed.
 
 **This cycle is finished when:** your fork has a merged PR linked to your issue, the help text works, and the practice spec records your actual checks. No GitHub Pages deployment is required for the student copy. Stop the app terminal with Ctrl+C when done.

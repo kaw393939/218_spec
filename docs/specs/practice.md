@@ -15,7 +15,8 @@ Help someone understand what they can put in the optional Note box.
 ## Examples to try
 
 - Open the app: the sentence appears below Note.
-- Save `https://example.com` with a short note: saving still works; a duplicate opens the existing entry.
+- Save `https://example.com` with a short note: saving still works.
+- Save that URL again with a different note: the existing entry opens and keeps the original note.
 
 ## Decisions and limits
 

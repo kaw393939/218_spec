@@ -1,6 +1,6 @@
 # Setup
 
-Use **ChatGPT desktop, Codex, and VS Code**. All work for this exercise stays in one project folder on your computer.
+Use **ChatGPT desktop, Codex, and VS Code**. Do this once, before the practice exercise. All work stays in one project folder on your computer. If your workspace is already prepared, go straight to [Ready to begin](#ready-to-begin).
 
 | Tool | Use it for |
 | --- | --- |
@@ -49,24 +49,60 @@ npm ci
 npm start
 ```
 
-Leave it running. Open **http://127.0.0.1:3000** in your browser. You should see **“Keep something useful.”** above Link and Note fields. This local app is separate from the GitHub Pages instructions.
+Wait for `Personal link library: http://127.0.0.1:3000`. Leave this terminal running; use a second terminal for other commands. Open **http://127.0.0.1:3000** in your browser. You should see **“Keep something useful.”** above Link and Note fields. This local app is separate from the GitHub Pages instructions.
 
 ## 4. Open the same folder in Codex
 
-In ChatGPT desktop, select **Codex**, add/open a **local project**, and choose the same `218_spec` folder that is open in VS Code. Start a local chat working on this computer, in that folder. Use the current folder rather than a separate worktree or cloud environment for this first exercise. [Local projects](https://learn.chatgpt.com/docs/projects), [Codex environments](https://learn.chatgpt.com/docs/environments/modes)
+Open **Codex** from ChatGPT desktop and add/open a **local project** using the same `218_spec` folder that is open in VS Code. Start a local chat working on this computer, in that folder. Use the current folder rather than a separate worktree or cloud environment for this first exercise. [Local projects](https://learn.chatgpt.com/docs/projects), [Codex environments](https://learn.chatgpt.com/docs/environments/modes)
 
 Paste into **Codex**:
 
 > Read AGENTS.md and docs/specs/practice.md in this project. Tell me the practice task and which existing HTML file it affects. Do not change anything yet.
 
-**Ready:** the reply identifies PRACTICE-001 and `app/public/index.html`. Open that file in VS Code and compare it with the explanation. If Codex cannot find it, check that both tools opened the same folder.
+The reply should identify PRACTICE-001 and `app/public/index.html`. Open that file in VS Code and compare it with the explanation. If Codex cannot find it, check that both tools opened the same folder.
+
+## Ready to begin
+
+Check these together with your instructor before starting the exercise:
+
+- Your GitHub copy has **Issues** and **Actions** available, and `origin` points to your account.
+- The app opens in your browser. Keep its address handy.
+- Codex can read `app/public/index.html` from the folder open in VS Code.
+- Your Git name/email and GitHub sign-in are set up so you can commit and push with your own account.
+
+If one is missing, ask for setup help here. The exercise begins with a working workspace, not with troubleshooting installations.
 
 Continue to [Your first change](./practice). It tells you what to discuss in ChatGPT and what to give Codex. Do not assume a separate chat automatically shares your plan or files; carry the agreed plan into Codex explicitly.
 
 ## If you get stuck
 
 - **Windows says npm scripts are disabled:** in VS Code's terminal dropdown, open a **Command Prompt** terminal and retry. No security-policy change is needed.
-- **Port 3000 is in use:** another copy may be running. Stop your earlier app terminal with Ctrl+C and retry; ask for help if you cannot identify it.
+- **Port 3000 is in use (`EADDRINUSE`):** if you recognize your earlier app terminal, stop it with Ctrl+C and retry. Otherwise leave it alone and use port 3001 below. Open the address printed by this new terminal.
+- **The page still shows the old version:** stop this app's terminal with Ctrl+C, rerun its start command, and refresh the matching browser address. This app loads HTML when the server starts.
+- **npm prints warnings:** check whether the command finished successfully. A warning alone does not mean setup failed. Share the actual output if unsure.
 - **Git asks for your name, email, or GitHub sign-in:** complete your Git identity/sign-in setup with your instructor before committing or pushing. Use your own account.
 - **Files or changes are missing:** check the folder in VS Code and the local project selected in Codex.
 - **Finished for now:** stop `npm start` with Ctrl+C. Your files stay in the project folder.
+
+### Use another port
+
+**macOS / Linux**
+
+```sh
+PORT=3001 npm start
+```
+
+**Windows Command Prompt**
+
+```bat
+set PORT=3001
+npm start
+```
+
+Open **http://127.0.0.1:3001**. Use that same command and address after a restart.
+
+### Ask AI for setup help
+
+Paste the failing command and its error into Codex, with this prompt. Omit passwords, tokens, and other secrets.
+
+> I am doing the setup, not changing the app yet. Explain this error in plain language and suggest the smallest next step for my operating system. Do not edit files or stop other programs. Tell me what success should look like.

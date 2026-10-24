@@ -110,3 +110,16 @@ npm ci printed install-script warnings even though installation completed and th
 The practice repository now contains the merged, checked change and closed issue. The trial app was stopped. The instructor starter was not changed to include the practice solution, and generated files were not committed.
 
 A true ChatGPT-desktop-to-Codex handoff, the browser merge interaction, and a student's independent first-time account setup remain untested. Those need a permitted desktop interface or a real student session. The trial does not justify calling this representative of all NJIT students.
+
+## Instruction revisions after review
+
+Updated the starter instructions following this trial:
+
+- Put an instructor-assisted workspace checkpoint before the exercise, with a direct route for students whose setup is complete.
+- Added alternate-port commands for macOS/Linux and Windows Command Prompt, a scoped AI troubleshooting prompt, and guidance for distinguishing warnings from failures.
+- Made server restart and matching the browser address explicit after HTML edits.
+- Ignored VitePress `.temp` output and retained staging of only the two intended assignment files.
+- Added a concise tracking-row example, GitHub source-link guidance, duplicate-note checks, and the expected skipped deployment status.
+- Fixed the practice page's link to the copy/setup section and added instructor preparation guidance.
+
+Validation: documentation build passed; setup section anchors and generated-file ignore rule checked. These revisions have not yet been tested with students or through another complete desktop walkthrough.

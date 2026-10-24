@@ -6,7 +6,7 @@ Practice one small change with AI: **add a helpful sentence below the Note box**
 
 Use **ChatGPT desktop** to discuss the task, **Codex** to work on the local project, and **VS Code** to inspect files and run the app. You also need a GitHub account.
 
-**First:** follow [Setup](./setup). You are ready when the app opens and Codex can identify the project files. No OpenAI API key is needed.
+**First:** complete [Setup](./setup#ready-to-begin) with your instructor before the exercise. If your workspace is ready, go directly to [Your first change](./practice). No OpenAI API key is needed.
 
 ## Follow one cycle
 
@@ -17,7 +17,7 @@ Use **ChatGPT desktop** to discuss the task, **Codex** to work on the local proj
 5. **Check:** try the result and give specific feedback if it differs from the spec.
 6. **Keep:** review the changed files in a pull request, then merge into your own main version.
 
-Follow [Your first change](./practice) for the exact steps and prompts. Watch the instructor demonstrate a cycle first if you are doing this in class.
+Follow [Your first change](./practice) for the exact steps and prompts. In class, start from a working workspace and watch the instructor demonstrate the cycle. Your job is to explain the change, review the plan, try the result, and give useful feedback.
 
 ## What belongs to you?
 
