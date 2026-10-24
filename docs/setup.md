@@ -6,7 +6,7 @@ Use **ChatGPT desktop, Codex, and VS Code**. Do this once, before the practice e
 | --- | --- |
 | ChatGPT desktop | Discuss the intention and a short plan. |
 | Codex, working locally | Read and edit the project files and run checks. |
-| VS Code | Open the files, inspect changes, and use the terminal. |
+| VS Code | Read and edit files in the same project folder. |
 
 No OpenAI API key is needed for the example app. Sign in to the class tools with your account. If access is unavailable, show the message to your instructor.
 
@@ -14,7 +14,7 @@ No OpenAI API key is needed for the example app. Sign in to the class tools with
 
 Have [ChatGPT desktop](https://learn.chatgpt.com/docs/app), [VS Code](https://code.visualstudio.com/), [Git](https://git-scm.com/install/), and [Node.js 24 LTS](https://nodejs.org/en/download) installed. If class setup is already complete, keep using it.
 
-In VS Code, select **Terminal → New Terminal**. A terminal is the panel where you type commands. Run these one line at a time:
+Open the terminal you already use for class: macOS Terminal, Windows PowerShell, or WSL. Run these one line at a time:
 
 ```sh
 git --version
@@ -22,34 +22,38 @@ node --version
 npm --version
 ```
 
-Each should print a version, with Node.js showing `v24...` (22.13 or newer also works). If a command is not found, finish that tool's installation and reopen VS Code, or ask your instructor for help.
+Each should print a version, with Node.js showing `v24...` (22.13 or newer also works). If a command is not found, finish that tool's installation and reopen your terminal, or ask your instructor for help.
 
 ## 2. Make your copy
 
 Sign in to GitHub. On [the starter repository](https://github.com/kaw393939/218_spec), choose **Use this template → Create a new repository**. Select your account, name the repository `ai-practice`, choose **Public**, and leave **Include all branches** unchecked. Select **Create repository from template**.
 
-You now have your own repository. Its address should be `github.com/YOUR-USERNAME/ai-practice`. In that repository, copy **Code → HTTPS**. In VS Code, open **View → Command Palette**, choose **Git: Clone**, paste the URL, select a local location, and open the cloned folder.
-
-**Already have your GitHub copy?** Clone that repository. **Already have the local folder?** Reopen it and continue your issue. If VS Code offers to open an existing clone, check its folder before accepting.
-
-**Check:** the file list shows `app/`, `docs/`, and `package.json`. This is your local project folder. In VS Code, open a new terminal inside it and run:
+You now have your own repository. In your class terminal, go to the folder where you keep projects. Replace `YOUR-USERNAME` with your GitHub username:
 
 ```sh
+git clone https://github.com/YOUR-USERNAME/ai-practice.git
+cd ai-practice
+pwd
+git status --short --branch
 git remote -v
 ```
 
-The `origin` address should contain your GitHub username. If it points to the instructor's repository, fix the clone before continuing.
+`git clone` downloads your copy; `cd` enters its folder. `origin` should point to your repository. Open this same folder in VS Code to read and edit files.
+
+**Already have your GitHub copy?** Clone that repository. **Already have the local folder?** Use `cd` to enter it and continue your issue; do not clone it again.
+
+**Check:** the folder contains `app/`, `docs/`, and `package.json`. Keep your terminal, VS Code, and Codex working in this same folder.
 
 ## 3. Run the app
 
-In that VS Code terminal:
+In that project folder, run:
 
 ```sh
 npm ci
 npm start
 ```
 
-Wait for `Personal link library: http://127.0.0.1:3000`. Leave this terminal running; use a second terminal for other commands. Open **http://127.0.0.1:3000** in your browser. You should see **“Keep something useful.”** above Link and Note fields. This local app is separate from the GitHub Pages instructions.
+Wait for `Personal link library: http://127.0.0.1:3000`. Leave this terminal running; use a second terminal in the same folder for other commands. Open **http://127.0.0.1:3000** in your browser. You should see **“Keep something useful.”** above Link and Note fields. This local app is separate from the GitHub Pages instructions.
 
 ## 4. Open the same folder in Codex
 
@@ -68,7 +72,7 @@ Check these together with your instructor before starting the exercise:
 - Your repository has **Issues** and **Actions** tabs, and `origin` points to your account. If a tab or workflow is unavailable, ask your instructor before starting.
 - The app opens in your browser. Keep its address handy.
 - Codex can read `app/public/index.html` from the folder open in VS Code.
-- In a second VS Code terminal, run the checks below. The first two should show your Git name and email. The last checks push access without changing GitHub:
+- In a second terminal in this project folder, run the checks below. The first two should show your Git name and email. The last checks push access without changing GitHub:
 
 ```sh
 git config user.name
@@ -84,7 +88,7 @@ Continue to [Your first change](./practice). It tells you what to discuss in Cha
 
 ## If you get stuck
 
-- **Windows says npm scripts are disabled:** in VS Code's terminal dropdown, open a **Command Prompt** terminal and retry. No security-policy change is needed.
+- **Windows PowerShell says npm scripts are disabled:** use `npm.cmd` wherever these instructions say `npm`. No security-policy change is needed.
 - **Port 3000 is in use (`EADDRINUSE`):** if you recognize your earlier app terminal, stop it with Ctrl+C and retry. Otherwise leave it alone and use port 3001 below. Open the address printed by this new terminal.
 - **The page still shows the old version:** stop this app's terminal with Ctrl+C, rerun its start command, and refresh the matching browser address. This app loads HTML when the server starts.
 - **npm prints warnings:** check whether the command finished successfully. A warning alone does not mean setup failed. Share the actual output if unsure.
@@ -100,10 +104,10 @@ Continue to [Your first change](./practice). It tells you what to discuss in Cha
 PORT=3001 npm start
 ```
 
-**Windows Command Prompt**
+**Windows PowerShell**
 
-```bat
-set PORT=3001
+```powershell
+$env:PORT=3001
 npm start
 ```
 

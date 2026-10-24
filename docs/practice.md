@@ -59,15 +59,17 @@ Create the issue and copy its URL. **PRACTICE-001** is our feature name; GitHub 
 
 ## 3. Make the change with AI
 
-In **VS Code**, open **Terminal → New Terminal** so the first terminal can keep the app running. Enter:
+Keep the app running in its first terminal. Open a second terminal and use `cd` to enter the same project folder. Check your location, then create your branch:
 
 ```sh
+pwd
+git status --short --branch
 git switch -c practice-001-note-help
 ```
 
 This creates your working branch. If you are returning to a branch you already created, use `git switch practice-001-note-help` instead.
 
-In **Codex**, paste the short plan you agreed in ChatGPT, then this prompt. Replace the final line with your actual issue URL:
+In **Codex**, paste the short plan you agreed in ChatGPT, then this prompt. Fill in your issue URL and the command/address that worked during setup:
 
 > Implement only PRACTICE-001 from docs/specs/practice.md using the plan pasted above. Inspect the existing HTML first and raise any conflict with the plan before editing. Update that spec with my issue URL, code link, and checks actually performed. Keep the tracking row short; record results, not temporary status such as “not pushed.” Use a GitHub URL for the changed source file, not a relative documentation link. Run npm test and npm run docs:build. Show the changed files and tell me how to check the page. Do not commit or push yet.
 >
@@ -84,7 +86,13 @@ Review requests to edit files or run commands before accepting them. If you only
 - The exact sentence appears below Note before you type anything.
 - Save `https://example.com` with a short note. The entry appears. If already saved, reopening the existing entry is expected.
 - Submit that same URL with a different note. The existing entry should keep its original note.
-- Read the diff (the before/after changes) in VS Code's **Source Control** view. Ask AI to explain anything unclear, including how it connected the help text to the field. If the terminal hides the diff, close the panel with its **×** button; this does not stop the app.
+- Read the diff (the before/after changes) in your second terminal:
+
+```sh
+git diff -- app/public/index.html docs/specs/practice.md
+```
+
+Ask AI to explain anything unclear, including how it connected the help text to the field. Open the files in VS Code alongside the explanation. If Git opens a scrolling view, press `q` to return to the terminal.
 
 If needed, say what you observed and what should change: “The help appears above Note. Put it directly below the box.” Recheck after the revision. A passing test result is useful; also try the page yourself.
 
@@ -98,12 +106,19 @@ Use your real links and results. Ask Codex to make the source link point to `app
 
 ## 5. Review and keep your work
 
-In Source Control, expect changes to `app/public/index.html` and `docs/specs/practice.md`. If other files appear, ask Codex why before staging. The commands below stage only the two assignment files.
+Expect changes only to `app/public/index.html` and `docs/specs/practice.md`. If `git status` shows other files, ask Codex why before staging.
 
 In the second terminal:
 
 ```sh
+git status --short
 git add app/public/index.html docs/specs/practice.md
+git diff --cached
+```
+
+Read the staged diff. It should contain only the two intended files. Then commit and push:
+
+```sh
 git commit -m "PRACTICE-001: explain the note limit"
 git push -u origin practice-001-note-help
 ```

@@ -7,7 +7,16 @@ Use **ChatGPT desktop, Codex, and VS Code**. No OpenAI API key is needed.
 ## Start here
 
 1. On [the starter repository](https://github.com/kaw393939/218_spec), choose **Use this template → Create a new repository**. Select your account, name it `ai-practice`, choose **Public**, and leave **Include all branches** unchecked.
-2. In **your new repository**, copy **Code → HTTPS**. In VS Code, choose **Git: Clone** from **View → Command Palette**, paste that URL, select a location, and open the cloned folder.
+2. Open your class terminal in the folder where you keep projects. Replace `YOUR-USERNAME` with your GitHub username, then run:
+
+   ```sh
+   git clone https://github.com/YOUR-USERNAME/ai-practice.git
+   cd ai-practice
+   pwd
+   git remote -v
+   ```
+
+   `origin` should point to your repository. Open this same folder in VS Code to read and edit files.
 3. Follow [Setup](https://kaw393939.github.io/218_spec/setup.html) to run the app and check access.
 4. Follow [Your first change](https://kaw393939.github.io/218_spec/practice.html): discuss → issue → AI edit → check → pull request.
 

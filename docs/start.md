@@ -4,7 +4,7 @@ Practice one small change with AI: **add a helpful sentence below the Note box**
 
 ## Before you begin
 
-Use **ChatGPT desktop** to discuss the task, **Codex** to work on the local project, and **VS Code** to inspect files and run the app. You also need a GitHub account.
+Use **ChatGPT desktop** to discuss the task, **Codex** to work on the local project, and **VS Code** to read and edit files. Use your class terminal for Git commands and running the app. You also need a GitHub account.
 
 **First:** complete [Setup](./setup#ready-to-begin) with your instructor before the exercise. If your workspace is ready, go directly to [Your first change](./practice). No OpenAI API key is needed.
 

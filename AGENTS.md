@@ -2,7 +2,7 @@
 
 This is a small teaching project about collaborating with AI through ordinary Markdown, focused issues, and reviewable changes.
 
-- Students use ChatGPT desktop, Codex, and VS Code. Explain discussion in ChatGPT, explicit plan handoff to Codex in the same local folder, and inspection in VS Code. Do not substitute Copilot or Codespaces.
+- Students use ChatGPT desktop, Codex, and VS Code. Explain discussion in ChatGPT, explicit plan handoff to Codex in the same local folder, and file inspection in VS Code. Use terminal Git commands for cloning, branches, diffs, staging, commits, and pushes; do not teach the VS Code Command Palette or Source Control workflow. Do not substitute Copilot or Codespaces.
 - Keep student instructions short, concrete, and accessible. Emphasize practicing the process; avoid adding rubrics, token quotas, or extra process machinery.
 - The link library is the worked example. IS117 uses a T-shirt ecommerce site, IS218 a four-function web calculator, and IS373 investigates an existing Docker/CI/CD deployment with a real domain. These course projects are not implemented here.
 - Read the relevant spec and existing files before editing. Discuss unresolved behavior before implementing it. Keep each change within its agreed scope.
