@@ -12,3 +12,9 @@
 }
 .VPHomeHero .text { max-width: 760px; }
 .VPHomeHero .tagline { max-width: 620px; }
+.assignment-overview { max-width: 1152px; margin: 0 auto 64px; padding: 0 32px; line-height: 1.7; }
+.assignment-overview h2 { margin: 40px 0 16px; font-size: 24px; font-weight: 650; letter-spacing: -.02em; }
+.assignment-overview p { margin: 16px 0; }
+.assignment-overview ul { padding-left: 22px; list-style: disc; }
+.assignment-overview a { color: var(--vp-c-brand-1); text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 640px) { .assignment-overview { padding: 0 24px; } }

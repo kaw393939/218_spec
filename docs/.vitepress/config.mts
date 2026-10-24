@@ -15,7 +15,7 @@ export default defineConfig({
     ],
     sidebar: [
       { text: 'Practice', items: [
-        { text: '1. README: get started', link: 'https://github.com/kaw393939/218_spec#readme' },
+        { text: 'README: get ready', link: 'https://github.com/kaw393939/218_spec#readme' },
         { text: 'Your first change', link: '/practice' },
         { text: 'Setup help', link: '/setup' },
         { text: 'Worked example', link: '/example' },

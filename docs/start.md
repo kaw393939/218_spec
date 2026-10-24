@@ -4,7 +4,11 @@ next: false
 ---
 # Start here
 
-Improve a working app with AI: add one helpful sentence below its Note box. The task is deliberately small so you can focus on agreeing a plan, reviewing AI edits, and checking the result.
+Improve a working app with AI: add one helpful sentence below its Note box. You are responsible for agreeing the scope, reviewing AI edits, and checking the result. The task is deliberately small so you can practice the full process.
+
+<WorkflowMap />
+
+[See the assignment overview and before/after](./).
 
 **New to this exercise? [Follow the README](https://github.com/kaw393939/218_spec#readme).** It takes you through creating your copy, terminal cloning, and running the app. Then it sends you to the assignment. No API key is needed.
 

@@ -12,17 +12,27 @@ Your app should already be running from [the README](https://github.com/kaw39393
 
 That is **PRACTICE-001**. This small change rehearses how to guide AI and verify its work. Saving and the existing limit stay unchanged.
 
+**Your job:** agree a small scope, review the AI's edits, and back up your conclusions with checks. The spec, issue, and PR make those decisions visible to someone returning later.
+
+<NoteComparison compact />
+
+<WorkflowMap />
+
+**Finish with:** a merged PR, a closed issue, and a spec linked to your code and actual checks. Follow the five steps below; optional reading can wait.
+
 ## 1. Agree a plan
 
 In **ChatGPT desktop**, attach `docs/specs/practice.md` from your cloned folder (or paste its contents). Ask:
 
-> Help me understand this task and agree a short plan. Do not code yet. Draft a short GitHub issue title and body with the feature ID, scope, and three examples to check. Use this spec link: https://kaw393939.github.io/218_spec/specs/practice.html
+> Help me understand this task. Do not code yet. Give me two labeled sections: “Plan for Codex” (at most five bullets) and “GitHub issue draft” (a title and short body with the feature ID, scope, and three examples to check). Use this spec link: https://kaw393939.github.io/218_spec/specs/practice.html
 
 Read the reply. Does it keep the task to help text below Note, connected to that field for assistive technology, with saving unchanged? Ask about anything unclear. Reject extra features. **You decide when the plan is ready.**
 
+## 2. Record the task
+
 In **your GitHub repository → Issues → New issue → Small feature or change**, use the AI's title and paste its body into **Plan and checks**. Review it against the spec before submitting. Copy the issue URL. GitHub's issue number is separate from the feature ID PRACTICE-001.
 
-## 2. Build with Codex
+## 3. Build with Codex
 
 In your second terminal:
 
@@ -33,13 +43,15 @@ git switch -c practice-001-note-help
 
 Start from a clean copy. If you already made this branch, use `git switch practice-001-note-help` instead.
 
-In **Codex**, working locally in this same folder, paste your agreed plan, issue URL, and the app command/address that worked. Then ask:
+<HandoffMap />
+
+Copy the agreed **Plan for Codex** section, not the whole conversation. In **Codex**, open your cloned folder as the local project. Paste the plan, your real issue URL, and the app command/address that worked (for example, `PORT=3001 npm start` and `http://127.0.0.1:3001` if you used the alternate port). Then ask:
 
 > Read AGENTS.md and docs/specs/practice.md, then inspect the existing HTML. Flag any conflict with our plan before editing. Implement only PRACTICE-001. Update the spec's tracking row with my issue and a GitHub source link on practice-001-note-help. Run npm test and npm run docs:build; record only checks actually performed. Show the changed files. Do not commit or push.
 
 Expect only `app/public/index.html` and `docs/specs/practice.md` to change. Read edit/command approval requests before accepting. A separate chat does not automatically have your plan: carry it into Codex yourself.
 
-## 3. Try it and give feedback
+## 4. Check and give feedback
 
 In the app's running terminal, press **Ctrl+C** and rerun your start command. Refresh the browser at the printed address. This app needs a restart to load changed HTML.
 
@@ -61,7 +73,7 @@ Press `q` if Git opens a scrolling view. Open the files in VS Code; ask Codex to
 
 Tell Codex what you actually saw. If the result is wrong, describe the mismatch and ask for a focused fix; restart and recheck. If it is right, ask it to record your browser results in the spec's short tracking row. Keep real issue/source links and actual results; do not claim checks you skipped.
 
-## 4. Review and keep it
+## 5. Keep the reviewed change
 
 In the second terminal:
 

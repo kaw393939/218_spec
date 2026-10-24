@@ -4,6 +4,25 @@ Make one small improvement to a working app: **explain the limit below the Note 
 
 The small change lets you practice the whole cycle: agree on a plan with AI, inspect its edits, try the result, and keep a clear record in GitHub. You are learning to guide and check AI, not just ask it for code.
 
+**You are responsible for the result.** ChatGPT helps you plan; Codex edits the local files. You decide whether the work matches the request.
+
+By the end, you should be able to:
+
+- Agree a small scope and examples with AI before coding.
+- Inspect a diff and use tests plus browser checks to judge the result.
+- Link a requirement to its issue, implementation, and checks.
+
+```mermaid
+flowchart LR
+  A["1. Plan<br/>ChatGPT desktop"] --> B["2. Record<br/>GitHub issue"]
+  B --> C["3. Build<br/>Codex"]
+  C --> D["4. Check<br/>Browser + VS Code"]
+  D --> E["5. Keep<br/>Git + GitHub PR"]
+  D -. "Give feedback and retry" .-> C
+```
+
+[See the before/after and visual overview](https://kaw393939.github.io/218_spec/). Get ready below, then follow the five-step assignment.
+
 ## 1. Get your copy
 
 Use your class setup: **ChatGPT desktop, Codex, VS Code, Git with GitHub SSH access, and Node.js 24** (22.13+ works). Keep using the SSH setup from class. No API key is needed. Missing a tool? Use [Setup help](https://kaw393939.github.io/218_spec/setup.html).
