@@ -1,3 +1,7 @@
+---
+prev: false
+next: false
+---
 # Start here
 
 Improve a working app with AI: add one helpful sentence below its Note box. The task is deliberately small so you can focus on agreeing a plan, reviewing AI edits, and checking the result.

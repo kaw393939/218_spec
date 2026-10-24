@@ -1,3 +1,7 @@
+---
+prev: false
+next: false
+---
 # Setup help
 
 **The assignment starts in [the README](https://github.com/kaw393939/218_spec#readme).** Follow its steps once. This page is help when something fails; you do not need to repeat setup here.

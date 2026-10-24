@@ -1,3 +1,7 @@
+---
+prev: false
+next: false
+---
 # Your first change
 
 Your app should already be running from [the README](https://github.com/kaw393939/218_spec#readme). Keep its terminal open. Use a second terminal in the same project folder for Git.
