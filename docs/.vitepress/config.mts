@@ -8,16 +8,16 @@ export default defineConfig({
   lastUpdated: true,
   themeConfig: {
     nav: [
-      { text: 'Start here', link: '/start' },
+      { text: 'Start here', link: 'https://github.com/kaw393939/218_spec#readme' },
       { text: 'Worked example', link: '/example' },
       { text: 'Background', link: '/background' },
       { text: 'GitHub', link: 'https://github.com/kaw393939/218_spec' }
     ],
     sidebar: [
       { text: 'Practice', items: [
-        { text: 'Start here', link: '/start' },
-        { text: 'Setup', link: '/setup' },
+        { text: '1. README: get started', link: 'https://github.com/kaw393939/218_spec#readme' },
         { text: 'Your first change', link: '/practice' },
+        { text: 'Setup help', link: '/setup' },
         { text: 'Worked example', link: '/example' },
         { text: 'Keep the work visible', link: '/review/' }
       ] },

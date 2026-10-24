@@ -10,7 +10,7 @@ Keep the first learner path short. Place optional background in reference pages.
 
 ## Prepare the first class session
 
-Complete the [setup checkpoint](./setup#ready-to-begin) with students before the AI exercise. Confirm their own repository, Issues/Actions access, local app, matching Codex/VS Code folder, and ability to commit/push. Demonstrate one small cycle from a prepared workspace, then let students repeat it.
+Complete [the README setup](https://github.com/kaw393939/218_spec#readme) with students before the AI exercise. Confirm their own repository, Issues/Actions access, local app, matching Codex/VS Code folder, and ability to commit/push. Demonstrate one small cycle from a prepared workspace, then let students repeat it.
 
 Keep installation and account recovery in setup time. During the exercise, focus discussion on the spec, the AI's plan, the actual diff, and the student's browser observations. The [UI trial findings](https://github.com/kaw393939/218_spec/blob/main/research/2026-10-23-student-ui-full-trial.md) explain these changes; they are observations from an agent trial, not evidence of student learning outcomes.
 

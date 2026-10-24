@@ -1,6 +1,6 @@
 # Worked example: save a link
 
-**Instructor demonstration, already completed.** To do your own task, follow [Setup](./setup) and [Your first change](./practice).
+**Instructor demonstration, already completed.** To do your own task, [start in the README](https://github.com/kaw393939/218_spec#readme).
 
 The [personal link library](./specs/link-library) is our example of a small project built with AI. Only **LINK-001: Save a link** is implemented. The remaining features are plans.
 
@@ -36,7 +36,7 @@ Ask AI to explain one part at a time: “Where does duplicate detection happen, 
 
 ## 4. Try the result
 
-First follow [Setup](./setup). In a prepared local workspace, use Node.js 22.13 or newer and run these commands in its terminal (the command panel opened inside the project folder):
+First prepare your local copy using [the README](https://github.com/kaw393939/218_spec#readme). If the app is already running, use that browser tab. Otherwise, in your project terminal:
 
 ```sh
 npm ci

@@ -1,112 +1,63 @@
 # Your first change
 
-First complete [Setup](./setup). Keep the app open in your browser and the same local project folder open in VS Code and Codex.
+Your app should already be running from [the README](https://github.com/kaw393939/218_spec#readme). Keep its terminal open. Use a second terminal in the same project folder for Git.
 
-**Task: PRACTICE-001.** Add this sentence directly below the optional Note box:
+**Before:** Note has a limit you cannot see. **After:** this sentence appears directly below the box, before typing:
 
 > Add a short note (up to 4,000 characters).
 
-The app already limits notes to 4,000 characters, but does not explain that limit beside the box. This task changes the help text only. The [practice spec](./specs/practice) is already in your workspace at `docs/specs/practice.md`.
+That is **PRACTICE-001**. This small change rehearses how to guide AI and verify its work. Saving and the existing limit stay unchanged.
 
-## 1. Discuss the plan
+## 1. Agree a plan
 
-In **ChatGPT desktop**, attach the file `docs/specs/practice.md` from your local folder (or paste its contents). Then ask:
+In **ChatGPT desktop**, attach `docs/specs/practice.md` from your cloned folder (or paste its contents). Ask:
 
-> Help me understand PRACTICE-001 and agree a short plan. Explain what should change and how I can try the result. Do not write code yet.
+> Help me understand this task and agree a short plan. Do not code yet. Draft a short GitHub issue title and body with the feature ID, spec link, scope, and three examples to check.
 
-ChatGPT can discuss the supplied spec. **Codex** will inspect the actual implementation before editing it.
+Read the reply. Does it keep the task to help text below Note, connected to that field for assistive technology, with saving unchanged? Ask about anything unclear. Reject extra features. **You decide when the plan is ready.**
 
-Read the reply. A sufficient plan is to add the sentence below Note, connect it to that field in HTML, keep saving unchanged, then run the existing checks and try the form. If it proposes extra work, reply: “Keep this to the help text and its connection to the Note field.”
+In **your GitHub repository → Issues → New issue → Small feature or change**, use the AI's title and paste its body into **Plan and checks**. Review it against the spec before submitting. Copy the issue URL. GitHub's issue number is separate from the feature ID PRACTICE-001.
 
-## 2. Record your task
+## 2. Build with Codex
 
-In a separate GitHub tab, open **your repository → Issues → New issue → Small feature or change**. If Issues is missing, see [Setup](./setup#_2-make-your-copy).
-
-Use this title:
-
-```text
-PRACTICE-001: Explain the note limit
-```
-
-Fill the three fields with:
-
-**Feature and spec link**
-
-```text
-PRACTICE-001
-https://kaw393939.github.io/218_spec/specs/practice.html
-Workspace file: docs/specs/practice.md
-```
-
-**What should change?**
-
-```text
-Below the optional Note box, show:
-Add a short note (up to 4,000 characters).
-Connect the help text to the Note field for assistive technology.
-Keep saving, validation, and duplicate behavior unchanged.
-```
-
-**Examples to try**
-
-```text
-Open the app: the help appears below Note, even before typing.
-Save https://example.com with a note: saving still works.
-Save the same URL with a different note: the original note stays unchanged.
-```
-
-Create the issue and copy its URL. **PRACTICE-001** is our feature name; GitHub assigns its own issue number, which may differ. The instructor's closed issue #1 is only a historical example.
-
-## 3. Make the change with AI
-
-Keep the app running in its first terminal. Open a second terminal and use `cd` to enter the same project folder. Check your location, then create your branch:
+In your second terminal:
 
 ```sh
-pwd
 git status --short --branch
 git switch -c practice-001-note-help
 ```
 
-This creates your working branch. If you are returning to a branch you already created, use `git switch practice-001-note-help` instead.
+Start from a clean copy. If you already made this branch, use `git switch practice-001-note-help` instead.
 
-In **Codex**, paste the short plan you agreed in ChatGPT, then this prompt. Fill in your issue URL and the command/address that worked during setup:
+In **Codex**, working locally in this same folder, paste your agreed plan, issue URL, and the app command/address that worked. Then ask:
 
-> Implement only PRACTICE-001 from docs/specs/practice.md using the plan pasted above. Inspect the existing HTML first and raise any conflict with the plan before editing. Update that spec with my issue URL, code link, and checks actually performed. Keep the tracking row short; record results, not temporary status such as “not pushed.” Use a GitHub URL for the changed source file, not a relative documentation link. Run npm test and npm run docs:build. Show the changed files and tell me how to check the page. Do not commit or push yet.
->
-> My issue URL: PASTE YOUR ISSUE URL HERE
->
-> My app start command and browser address: PASTE WHAT WORKED IN SETUP HERE
+> Read AGENTS.md and docs/specs/practice.md, then inspect the existing HTML. Flag any conflict with our plan before editing. Implement only PRACTICE-001. Update the spec's tracking row with my issue and a GitHub source link on practice-001-note-help. Run npm test and npm run docs:build; record only checks actually performed. Show the changed files. Do not commit or push.
 
-Review requests to edit files or run commands before accepting them. If you only receive suggested code in ChatGPT, switch to Codex in the local project and ask it to apply the agreed change there.
+Expect only `app/public/index.html` and `docs/specs/practice.md` to change. Read edit/command approval requests before accepting. A separate chat does not automatically have your plan: carry it into Codex yourself.
 
-## 4. Check and give feedback
+## 3. Try it and give feedback
 
-**Restart the app after the edit:** in its running terminal, press Ctrl+C and rerun the same start command you used in Setup. Refresh the browser tab at the address printed by that terminal. Refresh alone will not load the changed HTML in this app.
+In the app's running terminal, press **Ctrl+C** and rerun your start command. Refresh the browser at the printed address. This app needs a restart to load changed HTML.
 
-- The exact sentence appears below Note before you type anything.
-- Save `https://example.com` with a short note. The entry appears. If already saved, reopening the existing entry is expected.
-- Submit that same URL with a different note. The existing entry should keep its original note.
-- Read the diff (the before/after changes) in your second terminal:
+Try three things:
+
+- The exact sentence appears below Note before typing.
+- Save a link you want to keep with a note. The saved entry appears.
+- Submit that URL again with a different note. Your original note should remain.
+
+Tests check existing saving behavior; **they do not prove the new sentence appears correctly**.
+
+In the second terminal, inspect the before/after changes:
 
 ```sh
 git diff -- app/public/index.html docs/specs/practice.md
 ```
 
-Ask AI to explain anything unclear, including how it connected the help text to the field. Open the files in VS Code alongside the explanation. If Git opens a scrolling view, press `q` to return to the terminal.
+Press `q` if Git opens a scrolling view. Open the files in VS Code; ask Codex to explain anything unclear, including how the help is connected to Note.
 
-If needed, say what you observed and what should change: “The help appears above Note. Put it directly below the box.” Recheck after the revision. A passing test result is useful; also try the page yourself.
+Tell Codex what you actually saw. If the result is wrong, describe the mismatch and ask for a focused fix; restart and recheck. If it is right, ask it to record your browser results in the spec's short tracking row. Keep real issue/source links and actual results; do not claim checks you skipped.
 
-Tell Codex what you actually observed and ask it to record that in the spec. A short tracking row is enough:
-
-```text
-PRACTICE-001 | my issue URL | GitHub URL of the HTML on my branch | npm test: 6 passed; docs build passed; I checked help text, saving, and duplicate note preservation in the browser.
-```
-
-Use your real links and results. Ask Codex to make the source link point to `app/public/index.html` on your repository's `practice-001-note-help` branch. Do not report a browser check you have not done.
-
-## 5. Review and keep your work
-
-Expect changes only to `app/public/index.html` and `docs/specs/practice.md`. If `git status` shows other files, ask Codex why before staging.
+## 4. Review and keep it
 
 In the second terminal:
 
@@ -116,15 +67,15 @@ git add app/public/index.html docs/specs/practice.md
 git diff --cached
 ```
 
-Read the staged diff. It should contain only the two intended files. Then commit and push:
+Only those two files should be staged. If other changes appear, ask why before continuing. Read the diff, then:
 
 ```sh
 git commit -m "PRACTICE-001: explain the note limit"
 git push -u origin practice-001-note-help
 ```
 
-Open **your repository → Pull requests → New pull request**. Use base `main` and compare `practice-001-note-help`. The repository name at the top should be yours.
+In **your GitHub repository → Pull requests → New pull request**, select base `main` and compare `practice-001-note-help`. Describe what changed and what you checked. Add `Closes #N` using your issue number. You can ask Codex for a short draft; review it before posting.
 
-Describe what changed and what you tried. Add `Closes #N`, replacing N with your own issue's number. Create the PR, inspect **Files changed**, and wait for the build checks. A passing build is required; a skipped deployment is expected because your repository does not publish this site. If no checks appear, open your repository’s **Actions** tab, enable workflows if GitHub asks, and ask your instructor for help before merging. Merge when the change matches the spec and the checks pass. Verify the issue is closed.
+Inspect **Files changed**, wait for the build to pass, then merge when it matches the spec. A skipped deployment is expected; your copy does not need GitHub Pages. Missing checks? Use [Setup help](./setup#common-fixes). Keep the branch so your spec's source link continues to work.
 
-**This cycle is finished when:** your repository has a merged PR linked to your issue, the help text works, and the practice spec records your actual checks. No GitHub Pages deployment is required for the student copy. Stop the app terminal with Ctrl+C when done.
+**Done:** your PR is merged, its issue is closed, and the spec links to your code and actual checks. Stop the app with Ctrl+C. What did you ask AI to clarify or correct? That is the conversation to bring to class.
