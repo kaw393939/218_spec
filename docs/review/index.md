@@ -1,22 +1,20 @@
 # Keep the work visible
 
-The [exercise](../start) describes the working cycle. GitHub holds the connections so you and someone helping you can follow a change later.
+For RPS-001, keep the current decisions in your local `SPEC.md`. GitHub connects the request to the change so you can return later without reconstructing a chat.
 
-## Spec → issue → change → check
+| Record | What belongs there |
+| --- | --- |
+| **Spec** | Intended behavior, examples, agreed plan, and links to the work. |
+| **Issue** | One bounded task, identified as RPS-001, linked from the spec. |
+| **Pull request** | The change, actual check results, and `Closes #N` for your issue. |
+| **Code and tests** | The implementation and checks that support the behavior. |
 
-- **Spec:** what should happen, with a stable feature ID such as LINK-001.
-- **Issue:** one small task, a spec link, and a few examples of the expected result.
-- **Pull request:** the proposed change, the feature ID, and `Closes #123` linking its issue.
-- **Check:** try the behavior and record how it was checked. Link relevant code and tests from the spec.
+An issue records the task. A branch keeps your edits together. A pull request lets you review those edits before merging them into `main`. GitHub's issue number is separate from the feature ID RPS-001.
 
-An issue is a task record; a branch keeps its edits together; a pull request lets you inspect the difference before merging it into the main version.
+Keep the record short. Write **Not implemented** or **Not verified** until you have evidence. Passing tests do not establish visual usability, and AI should not claim a browser review it did not perform.
 
-Use open issues for remaining work and close them when the agreed behavior works. Add labels only when useful. No extra board is required. If one feature needs several small tasks, link those issues from its spec.
+Use relative links such as `[game.py](game.py)` and `[tests](tests/test_game.py)` in `SPEC.md` so they follow the version being viewed. Record important limits and your actual browser observations. No project board or full chat transcript is needed.
 
-## Keep the record small
+[Return to the starter README →](https://github.com/kaw393939/is218-rps-starter#readme)
 
-Record decisions beside the affected feature. Update an existing description when behavior changes. Link to code and tests once they exist; until then, write **Not implemented** or **Not verified**.
-
-A useful pull request says what changed, links its issue, and explains how you checked it. A long chat transcript is unnecessary.
-
-[Follow your first change](../practice) · [See the worked example](../example) · [Copy the spec template](../specs/template) · [Open issues](https://github.com/kaw393939/218_spec/issues)
+Optional: [earlier worked example](../example) · [short spec template](../specs/template)

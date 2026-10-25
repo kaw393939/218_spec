@@ -2,57 +2,32 @@
 prev: false
 next: false
 ---
-# Setup help
+# If you get stuck
 
-**The assignment starts in [the README](https://github.com/kaw393939/218_spec#readme).** Follow its steps once. This page is help when something fails; you do not need to repeat setup here.
+**Start in the [game starter README](https://github.com/kaw393939/is218-rps-starter#readme).** This page helps you get back to the step where you stopped. Students use their existing Python, Git/SSH, ChatGPT desktop, Codex, and VS Code setup from class.
 
-## Missing a tool?
+## Setup or startup
 
-Use your class installations of [ChatGPT desktop](https://learn.chatgpt.com/docs/app), [VS Code](https://code.visualstudio.com/), [Git](https://git-scm.com/install/), and [Node.js 24](https://nodejs.org/en/download), with your existing GitHub SSH setup. Sign in to the apps with your own accounts. Codex should work locally in the cloned project folder; [local project help](https://learn.chatgpt.com/docs/projects#use-local-projects-for-folders-and-codebases).
+| What you see | Next step |
+| --- | --- |
+| `Permission denied (publickey)` | Check that the SSH clone address is your own copy. Ask your instructor to help with the existing class SSH setup; do not replace keys or switch to HTTPS. |
+| `code .` is not found | In VS Code, use **File → Open Folder** and select the folder you cloned. |
+| `ModuleNotFoundError: flask` or `pytest` | In the project terminal, rerun the README's install command using `.venv/bin/python`. |
+| Port 5050 is in use | Leave other programs alone. Run `PORT=5051 .venv/bin/python run.py` and open **http://127.0.0.1:5051**. |
+| Game says its rules are unfinished | Setup worked. You are ready to implement RPS-001. |
+| AI cannot find `game.py` | Compare its local project folder with `pwd` in your project terminal. Codex and VS Code must use your cloned game folder. |
+| Browser shows an old version | Check the running terminal for errors, then refresh the printed address. Restart your own app if needed. |
 
-In your class terminal, these should each print a version:
+Use your **class terminal**: macOS Terminal or Ubuntu/WSL on Windows. The README's commands use that environment. Ask your instructor if Python or account access is missing.
 
-```sh
-git --version
-node --version
-npm --version
-```
+## Working with AI
 
-Node.js 22.13 or newer works. If a command is missing after installation, reopen the terminal. Ask your instructor if tool access is unavailable.
+**Unsure what a term means?** Ask: “Explain that using this game's behavior, and show me the file I should inspect.” You do not need to accept a plan you cannot explain.
 
-## Common fixes
+**New chat forgot the plan?** Point Codex to your saved `SPEC.md`. Keep decisions there rather than rebuilding the chat history.
 
-- **`code .` is not found:** in VS Code, use **File → Open Folder** and select your cloned folder. No Command Palette setup is needed.
-- **PowerShell blocks npm scripts:** use `npm.cmd` wherever the instructions say `npm`.
-- **Port 3000 is occupied (`EADDRINUSE`):** stop your earlier app with Ctrl+C if you recognize it. Otherwise leave it alone and use port 3001 below.
-- **The page still shows old HTML:** in this app's running terminal, press Ctrl+C, rerun its start command, then refresh the matching browser address.
-- **npm prints warnings:** look for whether the command completed. A warning alone is not a failed setup.
-- **Git name/email is blank:** ask Codex or your instructor to help configure your own Git identity.
-- **Clone or push says `Permission denied (publickey)`:** check that the repository's SSH address matches your copy, then ask your instructor to help with your existing class SSH setup. Do not force-push or replace your SSH keys as a workaround.
-- **Codex cannot find the files:** check that its local project and VS Code both use the folder printed by `pwd` in your project terminal.
-- **Issues or build checks are missing:** open your repository's Issues/Actions tabs. Enable workflows if GitHub asks; ask your instructor if unavailable.
+**A command fails?** Give Codex the command and error, leaving out passwords and tokens:
 
-### Another port
+> Explain the smallest next step for my class terminal. Do not add game features or stop other programs. Tell me what success should look like.
 
-macOS / Linux:
-
-```sh
-PORT=3001 npm start
-```
-
-Windows PowerShell:
-
-```powershell
-$env:PORT=3001
-npm start
-```
-
-Open the printed address, normally **http://127.0.0.1:3001**. Keep this command/address for later restarts. Stop your app with Ctrl+C when finished.
-
-## Ask AI for help
-
-Paste the failing command and error into Codex, leaving out passwords and tokens:
-
-> I am setting up the exercise. Explain this error and the smallest next step for my operating system. Do not edit the app or stop other programs. Tell me what success looks like.
-
-Once resolved, **return to the README step where you stopped**. If setup is complete, continue to [Your first change](./practice).
+Once resolved, **return to the same README step**. Do not start a new repository to fix an ordinary error.

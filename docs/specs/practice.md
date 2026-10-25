@@ -1,6 +1,10 @@
-# Practice: explain the note limit
+# Archived practice: explain the note limit
 
-This is the supplied first task for [Your first change](../practice). It is planned in the instructor's starter; students implement it in their own repositories.
+::: info Earlier exercise
+The current assignment is [Rock, Paper, Scissors](https://github.com/kaw393939/is218-rps-starter#readme). This page preserves PRACTICE-001 from the earlier link-library exercise. It is not another task to complete.
+:::
+
+PRACTICE-001 remains unfinished in the instructor's link-library repository. Prior trials implemented it in separate repositories.
 
 ## Purpose
 

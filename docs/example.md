@@ -2,10 +2,10 @@
 prev: false
 next: false
 ---
-# Worked example: save a link
+# Earlier worked example: save a link
 
-::: info Your task is PRACTICE-001: explain the Note limit
-This page shows the completed LINK-001 example. **App already running? [Continue your assignment](./practice).** Getting started? [Follow the README](https://github.com/kaw393939/218_spec#readme).
+::: info Optional earlier example
+Your current assignment is [Rock, Paper, Scissors](https://github.com/kaw393939/is218-rps-starter#readme). This page preserves the completed LINK-001 example. It is not another task to complete.
 :::
 
 The [personal link library](./specs/link-library) is our example of a small project built with AI. Only **LINK-001: Save a link** is implemented. The remaining features are plans.
@@ -42,7 +42,7 @@ Ask AI to explain one part at a time: “Where does duplicate detection happen, 
 
 ## 4. Try the result
 
-First prepare your local copy using [the README](https://github.com/kaw393939/218_spec#readme). If the app is already running, use that browser tab. Otherwise, in your project terminal:
+This optional Node/SQLite example lives in [218_spec](https://github.com/kaw393939/218_spec), a separate repository from the Python game. In a local copy of that repository:
 
 ```sh
 npm ci
@@ -59,4 +59,4 @@ The GitHub Pages website hosts these instructions; it does not run the applicati
 
 The [feature table](./specs/link-library#work-and-code) links the spec, issue, PR, code, and tests. Someone returning later can find the current behavior without reading the whole chat.
 
-For your own practice, follow the supplied [first change](./practice). You do not need to implement the rest of the link library.
+For your current assignment, use the [game starter README](https://github.com/kaw393939/is218-rps-starter#readme). You do not need to implement the rest of the link library or the archived Note-help task.

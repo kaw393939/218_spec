@@ -1,36 +1,32 @@
 # Short spec template
 
-For the first exercise, use the supplied [practice spec](./practice). For a later project, create a file called `docs/specs/my-project.md` using **New File** in VS Code's Explorer (the left-hand file list). Use the copy button on the block below and paste into that file; replace the bracketed text.
+**For Rock, Paper, Scissors, use the `SPEC.md` already supplied in your [starter](https://github.com/kaw393939/is218-rps-starter).** You do not need to create another spec.
+
+For a later project, a plain Markdown file can be this short:
 
 ````md
 # [Project name]
 
-## Purpose
-
-[Who is this for, and what should it help them do?]
-
 ## Next feature
 
 ID: PROJECT-001
-Change: [One small capability.]
-Expected result: [What should I see when it works?]
+Purpose: [Who is this for, and what will it help them do?]
+Expected result: [One small capability, described as observable behavior.]
 
-## Examples to try
+## Examples
 
-- [Action or input] → [Expected result]
+- [Input or action] → [Expected result]
 - [An important error or repeat action] → [Expected result]
 
-## Decisions and limits
+## Agreed plan and limits
 
-[Agreed choices, what can wait, and unanswered questions.]
+[Short plan, decisions, what can wait, and open questions.]
 
 ## Work and checks
 
-Issue: [Add your own issue URL.]
+Issue: [Your real issue URL.]
 Implementation: Not implemented.
 Checks: Not verified.
 ````
 
-`PROJECT-001` is an example feature ID. Replace PROJECT with a short project name, such as CALC-001 for a calculator. Keep the ID as the feature changes; GitHub's issue number is separate.
-
-When work is complete, replace the last three lines with links and the checks actually performed. See [Keep the work visible](../review/) for the connections.
+Keep the feature ID as behavior changes. GitHub's issue number is separate. When work is complete, replace the last lines with real links and actual check results. See [Keep the work visible](../review/).

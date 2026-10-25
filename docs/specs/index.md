@@ -1,9 +1,12 @@
-# Project specs
+# Specs and earlier examples
 
-| Project | What it does | Progress |
-| --- | --- | --- |
-| [Personal link library](./link-library) | Save links, automatically categorize and summarize them, and find them later. | LINK-001 complete · Four features planned |
+**Current assignment:** [Rock, Paper, Scissors starter](https://github.com/kaw393939/is218-rps-starter#readme). Its `SPEC.md` is the source for RPS-001's rules, nine expected matchups, and work record. Edit the copy in your own repository.
 
-The link library is the shared [worked example](../example). The class practice projects are described in [Start here](../start); they are not implemented in this repository.
+The pages below preserve earlier examples. They are optional reading, not additional assignment steps.
 
-To describe another project, copy the [short spec template](./template).
+| Earlier example | Status |
+| --- | --- |
+| [Personal link library](./link-library) | LINK-001 implemented; other features planned. [Walkthrough](../example). |
+| [Explain the Note limit](./practice) | Archived PRACTICE-001 exercise; unfinished in this instructor repository. |
+
+For a later project, use the [short spec template](./template).

@@ -2,11 +2,11 @@
 import { withBase } from 'vitepress'
 defineProps<{ compact?: boolean }>()
 const steps = [
-  ['Plan', 'ChatGPT desktop', 'Agree what should change.', '_1-agree-a-plan'],
-  ['Record', 'GitHub issue', 'Review the plan and examples.', '_2-record-the-task'],
-  ['Build', 'Codex', 'Make one change on a branch.', '_3-build-with-codex'],
-  ['Check', 'Browser + VS Code', 'Try it and inspect the diff.', '_4-check-and-give-feedback'],
-  ['Keep', 'Git + GitHub PR', 'Save the reviewed change.', '_5-keep-the-reviewed-change']
+  ['Try', 'Browser', 'See the supplied game shell.', '_1-try-the-starter'],
+  ['Decide', 'ChatGPT desktop', 'Agree on rules and save the plan.', '_2-decide-with-chatgpt'],
+  ['Build', 'Codex', 'Read the spec and finish one feature.', '_3-build-with-codex'],
+  ['Check', 'AI, then you', 'Test first, then play and inspect.', '_4-let-ai-check-then-play'],
+  ['Keep', 'Terminal Git + PR', 'Review and keep the change.', '_5-keep-the-reviewed-change']
 ]
 </script>
 
@@ -15,15 +15,15 @@ const steps = [
     <ol>
       <li v-for="(step, index) in steps" :key="step[0]">
         <a :href="withBase('/practice.html#' + step[3])">
-        <span class="step-number">{{ index + 1 }}</span>
-        <strong>{{ step[0] }}</strong>
-        <span class="tool">{{ step[1] }}</span>
-        <span v-if="!compact">{{ step[2] }}</span>
+          <span class="step-number">{{ index + 1 }}</span>
+          <strong>{{ step[0] }}</strong>
+          <span class="tool">{{ step[1] }}</span>
+          <span v-if="!compact">{{ step[2] }}</span>
         </a>
       </li>
     </ol>
-    <p v-if="compact">Follow the steps in order. Select a card to return to a step.</p>
-    <p v-else>If a check fails, give AI specific feedback, revise, and check again.</p>
+    <p v-if="compact">Select a step for its explanation. Follow the starter README for the commands.</p>
+    <p v-else>If a check fails, describe the mismatch, revise, and check again.</p>
   </nav>
 </template>
 

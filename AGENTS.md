@@ -1,16 +1,13 @@
 # Working in this repository
 
-This is a small teaching project about collaborating with AI through ordinary Markdown, focused issues, and reviewable changes.
+This is the instructor’s documentation site for a small AI collaboration exercise. The student game starter is https://github.com/kaw393939/is218-rps-starter, a separate Python repository. Do not copy a completed student solution here or silently implement the starter's unfinished rules.
 
-- Students use ChatGPT desktop, Codex, and VS Code. Explain discussion in ChatGPT, explicit plan handoff to Codex in the same local folder, and file inspection in VS Code. Use terminal Git commands for cloning, branches, diffs, staging, commits, and pushes; do not teach the VS Code Command Palette or Source Control workflow. Do not substitute Copilot or Codespaces.
-- Keep student instructions short, concrete, and accessible. Emphasize practicing the process; avoid adding rubrics, token quotas, or extra process machinery.
-- The link library is the worked example. IS117 uses a T-shirt ecommerce site, IS218 a four-function web calculator, and IS373 investigates an existing Docker/CI/CD deployment with a real domain. These course projects are not implemented here.
-- Read the relevant spec and existing files before editing. Discuss unresolved behavior before implementing it. Keep each change within its agreed scope.
-- Preserve feature IDs and links between specs, issues, PRs, source, and checks. Distinguish implemented behavior from plans. Do not invent evidence or code links.
-- Documentation lives in `docs/`; navigation is in `docs/.vitepress/config.mts`.
-- Build docs with `npm run docs:build`. Run `npm test` for application changes; `npm start` runs the local app.
-- GitHub Pages serves docs only. The app uses Node.js and SQLite. LINK-001 saves links; page reading and AI processing remain planned.
-- AI-assisted coding does not require adding AI to the application. Keep secrets and local SQLite data out of Git.
-
-- Student entry: create a repository from this GitHub template, then clone their own copy. Keep instructor `main` as the unfinished PRACTICE-001 starter; put completed practice trials in separate repositories.
-- Students already have GitHub SSH access configured in class. Use SSH clone URLs (`git@github.com:USERNAME/REPOSITORY.git`) and terminal Git in student instructions and trials.
+- Students use ChatGPT desktop to discuss, Codex in the same local project folder to implement/test/review, VS Code to inspect, and terminal Git over SSH. Do not teach the VS Code Command Palette, Git GUI, Copilot, or Codespaces as substitutes.
+- Keep one authoritative student path in the starter README. This site introduces the purpose and provides a visual guide, help, and optional background. Do not add a second full setup/assignment path.
+- Main cycle: Try → Decide → Build → Check → Keep. Save agreed decisions in SPEC.md. AI tests and reviews before the student plays and inspects the change; accurately state evidence limits.
+- RPS-001 is one independent round. RPS-002 first-to-two scoring is a separate later cycle. Avoid new features, grading machinery, token quotas, compulsory reflections, and unnecessary architecture.
+- Read relevant files/specs before editing. Preserve links among requirements, issues, PRs, code, and actual checks. Do not invent evidence or source links.
+- Documentation lives in docs/; navigation in docs/.vitepress/config.mts. Run npm run docs:build for site changes.
+- The existing Node/SQLite link app is an archived worked example. Run npm test for changes affecting it; npm start runs it. GitHub Pages serves instructions only.
+- Keep secrets, virtual environments, local SQLite data, caches, and student trial solutions out of this repository. Completed trials belong in separate repositories; research notes may link to them.
+- Students already have class GitHub SSH setup. Use git@github.com:USERNAME/REPOSITORY.git and terminal Git in instructions and trials.

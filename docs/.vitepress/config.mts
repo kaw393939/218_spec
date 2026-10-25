@@ -2,31 +2,28 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: 'Working with AI',
-  description: 'A short guided exercise in working with AI using Markdown specs, GitHub issues, and small changes.',
+  description: 'Build Rock, Paper, Scissors with AI. Agree on the rules, test the result, and review the work.',
   lang: 'en-US',
   base: '/218_spec/',
   lastUpdated: true,
   themeConfig: {
     nav: [
-      { text: 'Start here', link: 'https://github.com/kaw393939/218_spec#readme' },
-      { text: 'Worked example', link: '/example' },
-      { text: 'Background', link: '/background' },
-      { text: 'GitHub', link: 'https://github.com/kaw393939/218_spec' }
+      { text: 'Start the assignment', link: 'https://github.com/kaw393939/is218-rps-starter#readme' },
+      { text: 'Process guide', link: '/practice' },
+      { text: 'Help', link: '/setup' }
     ],
     sidebar: [
-      { text: 'Practice', items: [
-        { text: 'README: get ready', link: 'https://github.com/kaw393939/218_spec#readme' },
-        { text: 'Your first change', link: '/practice' },
-        { text: 'Setup help', link: '/setup' },
-        { text: 'Worked example', link: '/example' },
-        { text: 'Keep the work visible', link: '/review/' }
+      { text: 'Rock, Paper, Scissors', items: [
+        { text: 'Overview', link: '/' },
+        { text: 'README: do the assignment', link: 'https://github.com/kaw393939/is218-rps-starter#readme' },
+        { text: 'Process guide', link: '/practice' },
+        { text: 'If you get stuck', link: '/setup' }
       ] },
-      { text: 'Reference', items: [
+      { text: 'Optional reading', collapsed: true, items: [
         { text: 'Background and reading', link: '/background' },
-        { text: 'Practice spec', link: '/specs/practice' },
+        { text: 'Keep the work visible', link: '/review/' },
         { text: 'Short spec template', link: '/specs/template' },
-        { text: 'Personal link library', link: '/specs/link-library' },
-        { text: 'Project specs', link: '/specs/' },
+        { text: 'Earlier examples', link: '/specs/' },
         { text: 'Maintaining this website', link: '/contributing' }
       ] }
     ],
@@ -37,6 +34,6 @@ export default defineConfig({
       text: 'Edit this page on GitHub'
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/kaw393939/218_spec' }],
-    footer: { message: 'Describe. Build. Check. · Practice working with AI.' }
+    footer: { message: 'Agree on the rules. Let AI help. Check the result.' }
   }
 })

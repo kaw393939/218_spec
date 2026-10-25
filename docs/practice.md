@@ -2,101 +2,61 @@
 prev: false
 next: false
 ---
-# Your first change
+# Build a game you can trust
 
-**PRACTICE-001:** add this help directly below Note in your running app:
+**RPS-001:** make one round of Rock, Paper, Scissors work. Choose a move; see both choices and the correct win, lose, or tie result. Playing again starts another round.
 
-> Add a short note (up to 4,000 characters).
-
-Saving and the existing limit stay unchanged. **You agree the plan, inspect the edits, and check the result.** Need to get the app running first? [Follow the README](https://github.com/kaw393939/218_spec#readme).
-
-<details class="target-preview">
-<summary>Compare the starter and the goal</summary>
-
-<NoteComparison compact />
-
-</details>
+**Do the assignment in the [starter README](https://github.com/kaw393939/is218-rps-starter#readme).** This page explains the process. Keep using your own cloned game folder; you do not need a second copy or this site's build tools.
 
 <WorkflowMap compact />
 
-## 1. Agree a plan
+## 1. Try the starter
 
-Keep the app running in its first terminal; use a second terminal in the same folder for Git.
+Use the README's setup and startup command. Open the printed address. Expect **“Starter: game rules not built yet.”** The interface is supplied, but a move will not produce a game result yet. That is the unfinished task, not a broken setup.
 
-In **VS Code**, open `docs → specs → practice.md`. Attach that file in **ChatGPT desktop**, or copy its contents into the chat. Ask:
+**Checkpoint:** you can see the game in your browser and its files in VS Code.
 
-> Help me understand this task. Do not code yet. Give me two labeled sections: “Plan for Codex” (at most five bullets) and “GitHub issue draft” (a title and short body with the feature ID, scope, and three examples to check). Use this spec link: https://kaw393939.github.io/218_spec/specs/practice.html
+## 2. Decide with ChatGPT
 
-Read the reply. Does it keep the task to help text below Note, connected to that field for assistive technology, with saving unchanged? Ask about anything unclear. Reject extra features. **You decide when the plan is ready.**
+Discuss your local `SPEC.md` in **ChatGPT desktop** before coding. Read the nine-matchup table: for each player/computer pair, is the expected result correct? Those are the expectations you will ask AI to test.
 
-## 2. Record the task
-
-An issue keeps the plan and examples you agreed on in one place.
-
-In **your GitHub repository → Issues → New issue → Small feature or change**, use the AI's title and paste its body into **Plan and checks**. Review it against the spec before submitting. Copy the issue URL. GitHub's issue number is separate from the feature ID PRACTICE-001.
-
-## 3. Build with Codex
-
-In your second terminal:
-
-```sh
-git status --short --branch
-git switch -c practice-001-note-help
-```
-
-Start from a clean copy. If you already made this branch, use `git switch practice-001-note-help` instead.
+Agree on a short plan. Save it in `SPEC.md` using VS Code. Create one GitHub issue for RPS-001 and put its URL in the same file. You do not need to copy the whole conversation.
 
 <HandoffMap />
 
-Copy the agreed **Plan for Codex** section, not the whole conversation. In **Codex**, open your cloned folder as the local project. Paste the plan, your real issue URL, and the app command/address that worked (for example, `PORT=3001 npm start` and `http://127.0.0.1:3001` if you used the alternate port). Then ask:
+**Checkpoint:** `SPEC.md` holds the rules, agreed plan, and your real issue link. You can explain what is included and what can wait.
 
-> Read AGENTS.md and docs/specs/practice.md, then inspect the existing HTML. Flag any conflict with our plan before editing. Implement only PRACTICE-001. Update the spec's tracking row with my issue and a GitHub source link on practice-001-note-help. Run npm test and npm run docs:build; record only checks actually performed. Show the changed files. Do not commit or push.
+## 3. Build with Codex
 
-Expect only `app/public/index.html` and `docs/specs/practice.md` to change. Read edit/command approval requests before accepting. A separate chat does not automatically have your plan: carry it into Codex yourself.
+Use terminal Git to create the feature branch named in the README. Open **the same cloned folder** in Codex. Ask it to read `AGENTS.md` and your saved `SPEC.md`, inspect the code, and flag conflicts before implementing RPS-001.
 
-## 4. Check and give feedback
+The main task is the unfinished rule function in `game.py`, with meaningful tests and a short record in `SPEC.md`. Leave the supplied browser/server shell alone unless a specific problem requires a fix. Ask AI to explain any extra edit. Do not add scoring yet.
 
-In the app's running terminal, press **Ctrl+C** and rerun your start command. Refresh the browser at the printed address. This app needs a restart to load changed HTML.
+**Checkpoint:** AI has made a focused change and can explain which files changed and why.
 
-Try three things:
+## 4. Let AI check, then play
 
-- The exact sentence appears below Note before typing.
-- Save a link you want to keep with a note. The saved entry appears.
-- Submit that URL again with a different note. Your original note should remain.
+Before you play, ask Codex to run the checks and review the change against the spec. Tests should cover **all nine matchups** and verify that a browser request reaches the game logic. A random click is not a reliable way to check a particular matchup.
 
-Tests check existing saving behavior; **they do not prove the new sentence appears correctly**.
+Its report should tell you **what it actually tested, what passed or failed, and what still needs your review**. An AI review is another chance to catch mistakes; it does not prove the experience is good.
 
-In the second terminal, inspect the before/after changes:
+Then play several rounds. Are both choices visible? Is each displayed result correct? Can you play again? In VS Code and the terminal diff, inspect how the outcome is decided and compare the tests with the spec's expected results.
 
-```sh
-git diff -- app/public/index.html docs/specs/practice.md
-```
+Give specific feedback: “I chose Rock, the computer chose Paper, but it said I won.” Ask for a focused fix and rerun affected checks. If the result is correct, you do not need to invent a defect. Record only checks you actually performed.
 
-Press `q` if Git opens a scrolling view. Open the files in VS Code; ask Codex to explain anything unclear, including how the help is connected to Note.
-
-Tell Codex what you actually saw. If the result is wrong, describe the mismatch and ask for a focused fix; restart and recheck. If it is right, ask it to record your browser results in the spec's short tracking row. Keep real issue/source links and actual results; do not claim checks you skipped.
+**Checkpoint:** tests and your browser observations support the agreed behavior; any remaining limits are stated.
 
 ## 5. Keep the reviewed change
 
-A pull request (PR) puts your changes and checks together for review before you keep them.
+Follow the README's terminal Git steps to inspect, stage, commit, and push. Open a PR in your repository, describe the result and actual checks, and use `Closes #N` with your issue number. Review the diff and passing GitHub check before merging.
 
-In the second terminal:
+`SPEC.md` connects RPS-001 to the issue, implementation, and checks. Keep the record short; no chat transcript is needed.
 
-```sh
-git status --short
-git add app/public/index.html docs/specs/practice.md
-git diff --cached
-```
+**Done:** you have a playable round, a merged PR, a closed issue, and evidence you can explain. Optional class discussion: what did you ask AI to clarify or correct?
 
-Only those two files should be staged. If other changes appear, ask why before continuing. Read the diff, then:
+<details>
+<summary>Another cycle, after the first one works</summary>
 
-```sh
-git commit -m "PRACTICE-001: explain the note limit"
-git push -u origin practice-001-note-help
-```
+**RPS-002: first to two wins; ties do not count.** Agree on scoring, when the match ends, and what reset clears. Update the spec, implement, and test without breaking the original round rules. This is a later feature, not part of RPS-001. Personalize the title, colors, or wording after the core game works.
 
-In **your GitHub repository → Pull requests → New pull request**, select base `main` and compare `practice-001-note-help`. Describe what changed and what you checked. Add `Closes #N` using your issue number. You can ask Codex for a short draft; review it before posting.
-
-Inspect **Files changed**, wait for the build to pass, then merge when it matches the spec. A skipped deployment is expected; your copy does not need GitHub Pages. Missing checks? Use [Setup help](./setup#common-fixes). Keep the branch so your spec's source link continues to work.
-
-**Done:** your PR is merged, its issue is closed, and the spec links to your code and actual checks. Stop the app with Ctrl+C. What did you ask AI to clarify or correct? That is the conversation to bring to class.
+</details>

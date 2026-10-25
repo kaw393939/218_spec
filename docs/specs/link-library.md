@@ -1,6 +1,6 @@
 # Personal link library
 
-**Instructor reference, not your task list.** Begin with [Start here](../start) for your own practice.
+**Earlier worked example, not your task list.** The current assignment is [Rock, Paper, Scissors](https://github.com/kaw393939/is218-rps-starter#readme). This page preserves the link-library requirements and implementation record.
 
 Our worked example: save links now; add summaries and organization later. [Follow the walkthrough](../example).
 

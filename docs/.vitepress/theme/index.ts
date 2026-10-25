@@ -2,6 +2,7 @@ import DefaultTheme from 'vitepress/theme'
 import WorkflowMap from './components/WorkflowMap.vue'
 import NoteComparison from './components/NoteComparison.vue'
 import HandoffMap from './components/HandoffMap.vue'
+import GamePreview from './components/GamePreview.vue'
 import './style.css'
 
 export default {
@@ -10,5 +11,6 @@ export default {
     app.component('WorkflowMap', WorkflowMap)
     app.component('NoteComparison', NoteComparison)
     app.component('HandoffMap', HandoffMap)
+    app.component('GamePreview', GamePreview)
   }
 }

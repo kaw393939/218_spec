@@ -1,42 +1,42 @@
 ---
 layout: home
 hero:
-  name: Working with AI
-  text: Guide AI through one small change.
-  tagline: Add help below the Note box in a working app. Practice planning with AI, reviewing edits, and checking the result.
+  name: Working with AI · IS218
+  text: Build a game you can trust.
+  tagline: Make Rock, Paper, Scissors work with AI. Agree on the rules, let AI test its work, then play and review it yourself.
   actions:
     - theme: brand
-      text: Begin with the README
-      link: https://github.com/kaw393939/218_spec#readme
+      text: Start the assignment →
+      link: https://github.com/kaw393939/is218-rps-starter#readme
     - theme: alt
-      text: My app is ready → the assignment
+      text: See the process
       link: /practice
 ---
 
 <div class="assignment-overview">
 
-## See the change you will make
+## Your game, one small feature
 
-The app already saves links. Your change adds **“Add a short note (up to 4,000 characters).”** below Note. ChatGPT helps plan; Codex edits the files. **You review and check the work.**
+You get a Python app with a browser interface. **The game rules are unfinished.** Work with AI to make one round playable: choose a move, see the computer's choice, and find out who won.
 
-<NoteComparison />
+<GamePreview />
 
-## What will you learn?
+## What you will learn
 
-- Turn a request into a short plan with clear limits and examples.
-- Review AI edits and use browser checks and tests as evidence.
-- Connect the requirement, issue, code, and checks so someone can follow your work later.
+- Turn an idea into a short spec with examples everyone can check.
+- Guide AI through a focused change, and ask it to test and review before you play.
+- Inspect the result and leave a clear trail from the request to the code and checks.
+
+You decide what should happen. AI helps build and check it. You decide whether the result meets the spec.
 
 ## The route
 
-**Get ready once:** follow the README to create your GitHub copy, clone it with SSH, and run the app. Then follow these five steps in [Your first change](./practice):
-
 <WorkflowMap />
 
-**Your finished work:** a working help sentence, a merged pull request that closes your issue, and a spec linking to your code and actual checks. No API key or student website deployment is needed.
+**Follow one set of instructions:** the [starter README](https://github.com/kaw393939/is218-rps-starter#readme). It covers your GitHub copy, SSH clone, setup, and the assignment. Use ChatGPT desktop to discuss, Codex in that local folder to build, VS Code to inspect, and terminal Git to keep the change.
 
-[Begin with the README →](https://github.com/kaw393939/218_spec#readme)
+**Done looks like:** a playable round, checks for all nine matchups, your own browser review, and a merged PR linked to the issue and `SPEC.md`. No API key or deployment is needed.
 
-Optional: [worked example](./example) · [background and reading](./background) · [spec template](./specs/template)
+[Start with the starter README →](https://github.com/kaw393939/is218-rps-starter#readme)
 
 </div>

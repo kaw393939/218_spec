@@ -1,17 +1,22 @@
 # Maintaining this website
 
-This page is for contributors to the instructor's documentation site. It is not part of the student's first exercise.
+This page is for the instructor and documentation contributors. Students do not build this website.
 
-Content lives in `docs/`; navigation lives in `docs/.vitepress/config.mts`. Use Node.js 22.13 or newer, run `npm ci`, then `npm run docs:dev` to preview locally.
+Content lives in `docs/`; navigation lives in `docs/.vitepress/config.mts`. With Node.js 22.13 or newer, run `npm ci`, then `npm run docs:dev` to preview locally. Run `npm run docs:build` before publishing.
 
-Run `npm run docs:build` before publishing. Pull requests validate the build. Pushes to `main` in `kaw393939/218_spec` publish through [GitHub Actions](https://github.com/kaw393939/218_spec/actions/workflows/deploy.yml). Student copies run checks without deploying the instructor's site.
+Pushes to `main` in `kaw393939/218_spec` publish through [GitHub Actions](https://github.com/kaw393939/218_spec/actions/workflows/deploy.yml). GitHub Pages serves instructions only.
 
-Keep the first learner path short. Place optional background in reference pages. Preserve links between features, issues, PRs, code, and checks.
+## Two repositories, two purposes
 
-## Prepare the first class session
+- **[is218-rps-starter](https://github.com/kaw393939/is218-rps-starter):** the student template. Its README is the single assignment path; `SPEC.md` carries current decisions. Keep RPS-001 unfinished on template `main`. Completed trials belong in separate repositories.
+- **[218_spec](https://github.com/kaw393939/218_spec):** this documentation site and the earlier Node/SQLite link-library example. Preserve its existing URLs and LINK/PRACTICE feature records as archives.
 
-Complete [the README setup](https://github.com/kaw393939/218_spec#readme) with students before the AI exercise. Confirm their own repository, Issues/Actions access, local app, matching Codex/VS Code folder, and ability to commit/push. Demonstrate one small cycle from a prepared workspace, then let students repeat it.
+Do not ask students to install this site's Node dependencies or build VitePress to work on their Python game. Do not copy a completed game solution into the starter.
 
-Keep installation and account recovery in setup time. During the exercise, focus discussion on the spec, the AI's plan, the actual diff, and the student's browser observations. The [UI trial findings](https://github.com/kaw393939/218_spec/blob/main/research/2026-10-23-student-ui-full-trial.md) explain these changes; they are observations from an agent trial, not evidence of student learning outcomes.
+## Keep the lesson focused
 
-Keep `main` as the student starter: PRACTICE-001 must remain unfinished there. Practice solutions and research trials belong in separate repositories. Keep this repository enabled as a GitHub template; students copy only its default branch. No stage branches are needed for the first exercise.
+Confirm SSH access, Python, local AI tools, and Git identity during class setup. Demonstrate a short cycle: agree on behavior, save the plan, ask AI to implement and test, then inspect and play.
+
+Keep installation recovery on the help page. Keep background reading optional. Avoid duplicate command sequences and handoff prompts across the site and README.
+
+The [earlier trial report](https://github.com/kaw393939/218_spec/blob/main/research/2026-10-25-full-ssh-assignment-trial.md) identified context handoff and setup friction. These are observations from an agent-enacted trial, not evidence of student learning outcomes. Use real student observation to check whether the revised materials help.
