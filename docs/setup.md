@@ -17,6 +17,7 @@ next: false
 | Game says its rules are unfinished | Setup worked. You are ready to implement RPS-001. |
 | AI cannot find `game.py` | Compare its local project folder with `pwd` in your project terminal. Codex and VS Code must use your cloned game folder. |
 | Browser shows an old version | Check the running terminal for errors, then refresh the printed address. Restart your own app if needed. |
+| A red development-server warning or pip update notice | Normal for this local exercise. Look for `Running on http://127.0.0.1:5050` and open that address; no server replacement or pip update is needed. |
 
 Use your **class terminal**: macOS Terminal or Ubuntu/WSL on Windows. The README's commands use that environment. Ask your instructor if Python or account access is missing.
 

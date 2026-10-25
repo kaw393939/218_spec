@@ -40,7 +40,7 @@ Before you play, ask Codex to run the checks and review the change against the s
 
 Its report should tell you **what it actually tested, what passed or failed, and what still needs your review**. An AI review is another chance to catch mistakes; it does not prove the experience is good.
 
-Then play several rounds. Are both choices visible? Is each displayed result correct? Can you play again? In VS Code and the terminal diff, inspect how the outcome is decided and compare the tests with the spec's expected results.
+Refresh, choose a new move, then play several rounds. Are both choices visible? Is each displayed result correct? Can you play again? In VS Code and the terminal diff, inspect how the outcome is decided and compare the tests with the spec's expected results.
 
 Give specific feedback: “I chose Rock, the computer chose Paper, but it said I won.” Ask for a focused fix and rerun affected checks. If the result is correct, you do not need to invent a defect. Record only checks you actually performed.
 
