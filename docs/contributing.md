@@ -17,7 +17,17 @@ Do not ask students to install this site's Node dependencies or build VitePress 
 
 The lab must work without a classroom demonstration. Give explicit actions, expected results, and checkpoints in the starter README. Assume the existing class SSH setup, and link precise recovery help for Python, local app access, and Git identity.
 
-Use one local Codex chat inside ChatGPT desktop for discussion, saving the plan, implementation, tests, and review. VS Code is optional. Keep installation recovery on the help page and background reading optional. Avoid duplicate command sequences or a second full assignment path on the site.
+Get students into their cloned folder as a local AI project before Python setup. The first conversation explains the goal and supplied files, guides setup, and ends with the student trying the unfinished game. Use short checkpoints so they can ask questions while getting something running.
+
+The README documents ChatGPT desktop. Another agent needs local file read/edit and terminal access; browser/desktop control can help review. Keep discussion, saving the plan, implementation, tests, and review in the same project. VS Code is optional. Keep recovery on the help page and background reading optional. Avoid duplicate command sequences or a second full assignment path on the site.
+
+## Reusable learning projects
+
+Treat each template as a small learning environment: a recognizable goal, a runnable shell, one unfinished concept, examples in a short spec, and prepared checks. The learner sees a result early, makes decisions with AI, and connects one requirement to code and a meaningful test. Setup should introduce the tools in context, with room to ask questions.
+
+Guide the first feature closely. After it works, offer a few small feature ideas and let the student choose one, write the request, and repeat with less prompting. New course projects can reuse this structure while changing the concept being practiced. A website might emphasize audience and design; a hosting project might emphasize deployment and recovery. Keep each project's first task narrow.
+
+The risk is that the agent completes the exercise while the learner watches. Preserve student actions: predict an outcome, approve the saved plan, inspect a test, try the application, and explain a mismatch. These design choices aim to support learning; agent-enacted walkthroughs cannot establish student engagement or learning outcomes.
 
 Preserve the prepared checks and shared configuration. Explain positive/negative cases separately from unit/integration/E2E levels. The [worked failure example](./checks#when-a-check-fails) must be self-contained; do not require students to introduce bugs or write an extra reflection document.
 

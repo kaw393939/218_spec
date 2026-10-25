@@ -8,7 +8,7 @@ next: false
 
 [Follow the starter README →](https://github.com/kaw393939/is218-rps-starter#readme)
 
-This is a self-paced, guided lab. The README gives the actions and checkpoints. Create your own GitHub copy, clone it with SSH, and use one local Codex chat inside ChatGPT desktop to discuss, save the spec, build, test, and review. Use terminal Git and a browser; VS Code is optional.
+This is a self-paced, guided lab. The README gives the actions and checkpoints. Create your own GitHub copy, clone it with SSH, and open the folder as a local AI project. The first chat explains the project and helps get it running. Continue there to agree on a feature, save the spec, build, test, and review. The documented path uses ChatGPT desktop, terminal Git, and a browser; VS Code is optional.
 
 <WorkflowMap />
 

@@ -36,9 +36,13 @@ You decide what should happen. AI helps build and check it. You decide whether t
 
 <WorkflowMap />
 
-**Follow one set of instructions:** the [starter README](https://github.com/kaw393939/is218-rps-starter#readme). It covers your GitHub copy, SSH clone, setup, and each checkpoint. Use one local Codex chat inside ChatGPT desktop to discuss, save the spec, build, test, and review. Keep the change with terminal Git. Use a browser to play; VS Code is optional.
+**Start: your GitHub copy → SSH clone → local AI project.** Follow the [starter README](https://github.com/kaw393939/is218-rps-starter#readme), then open the cloned folder in ChatGPT desktop's Codex mode. Your first conversation explains the project and guides setup one checkpoint at a time, until you can run the unfinished game. [Another coding agent can work with the same files and terminal](./setup#another-coding-agent).
+
+Stay in that project to agree on one feature, save the spec, build, test, and review. Keep the change with terminal Git. Use a browser to play; VS Code is optional.
 
 **Done looks like:** a playable round, checks for all nine matchups, your own browser review, and a merged PR linked to the issue and `SPEC.md`. No API key or deployment is needed.
+
+**Then make it yours:** choose one follow-up feature with less guidance—first-to-two scoring, an explanation of why a move won, or your own visual style. Use the same process again.
 
 [Start with the starter README →](https://github.com/kaw393939/is218-rps-starter#readme)
 

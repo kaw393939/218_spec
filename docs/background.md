@@ -16,7 +16,7 @@ This resembles approaches used in current AI development tools. GitHub's Spec Ki
 
 ## You and the AI
 
-In this lab, one local Codex chat inside ChatGPT desktop can read your cloned folder, discuss the task, save agreed decisions, edit files, and run checks. Stay in that chat through the cycle. VS Code is optional; the app's terminal and file viewer support inspection.
+In this lab, a local project chat can read your cloned folder, discuss the task, save agreed decisions, edit files, and run checks. The README uses ChatGPT desktop's Codex mode. Stay in that project through the cycle. VS Code is optional; the app's terminal and file viewer support inspection.
 
 You bring the purpose, preferences, and decisions. AI can help clarify questions, suggest options, explain files, and implement changes. The running application and its checks give you something concrete to inspect together.
 

@@ -12,23 +12,25 @@ next: false
 
 ## 1. Try the starter
 
-Run the supplied app and open its address. Click a move: expect both choices and **“Starter: game rules not built yet.”** A missing winner is the unfinished task, not a broken setup.
+Create your GitHub copy of the template, SSH-clone it, and open that folder as a local AI project. The README shows the ChatGPT desktop path and the first prompt. Ask the agent to explain what you will build and what is supplied, then guide setup one checkpoint at a time.
 
-**Checkpoint:** the browser shows the game and its unfinished notice.
+Let the agent prepare the class Python environment and run the baseline checks. They verify the supplied shell, not the missing rules. Then start the app in your class terminal and open its printed address. Click a move: expect both choices and **“Starter: game rules not built yet.”**
+
+**Checkpoint:** the agent can read your clone, the checks pass with **STARTER BASELINE ONLY**, and the browser shows the unfinished game. You have something running before you plan the change.
 
 ## 2. Decide with your coding agent
 
-Use **Codex mode inside ChatGPT desktop**, open your cloned folder, and choose **Work in → This computer**, with Worktree off. Stay in this local chat for the exercise.
+Continue in the same local project chat.
 
 Predict one matchup yourself, then ask the agent to read `AGENTS.md` and `SPEC.md` and propose a short plan without editing. Compare it with the nine expected outcomes. Ask about anything you cannot explain.
 
 Agree on the rules and a small test plan. A valid loss is a **positive case**; an unsupported move is a **negative case**. Those describe the inputs, while unit, integration, and E2E describe the [level of a check](./checks).
 
-Once you agree, ask the agent to save the plan in `SPEC.md`. Use the app's terminal to inspect the saved file and run the prepared baseline checks. They verify the supplied shell, not the missing rules. Create one issue and ask the agent to add its real URL to the spec.
+Once you agree, ask the agent to save the plan in `SPEC.md`. Use the project terminal to inspect the saved file. Create one issue and ask the agent to add its real URL to the spec.
 
 <HandoffMap />
 
-**Checkpoint:** you have read the saved plan, the baseline passes with **STARTER BASELINE ONLY**, and `SPEC.md` contains your issue link.
+**Checkpoint:** you have read the saved plan and `SPEC.md` contains your issue link.
 
 ## 3. Build in the same chat
 
@@ -59,6 +61,6 @@ Use the README's terminal Git steps to review, commit, and push. Open a PR linke
 <details>
 <summary>Another cycle, after the first one works</summary>
 
-**RPS-002: first to two wins; ties do not count.** Write your own short request and test plan with less guidance. Decide when the match ends and what reset clears. Use a separate issue and PR. Personalizing the game can wait until its rules work.
+Choose **one** [next feature](https://github.com/kaw393939/is218-rps-starter/blob/main/NEXT.md): first-to-two scoring, an explanation of the result, or personalizing the interface. Write your own short request and test plan with less guidance. Use a separate issue and PR, and preserve the working rules and checks.
 
 </details>

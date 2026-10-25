@@ -2,9 +2,9 @@
 
 Use Rock, Paper, Scissors to practice a repeatable process: agree what should happen, guide AI, let it test and review its work, then check the result yourself.
 
-**Students: [start in the game starter README](https://github.com/kaw393939/is218-rps-starter#readme).** Create your own copy there and clone it with SSH. Use your class Python, one local Codex chat inside ChatGPT desktop, terminal Git, and a browser. VS Code is optional. No API key or website deployment is needed.
+**Students: [start in the game starter README](https://github.com/kaw393939/is218-rps-starter#readme).** Create your own copy, SSH-clone it, and open that folder as a local AI project. Your first chat explains the assignment and helps get it running. The documented path uses ChatGPT desktop, terminal Git, and a browser; VS Code is optional. [Other local coding agents](https://kaw393939.github.io/218_spec/setup.html#another-coding-agent) need file and terminal access. No API key or website deployment is needed.
 
-**Try → Decide → Build → Check → Keep.** Your first change makes one round playable. A later change adds first-to-two scoring. Keep the first task small.
+**Try → Decide → Build → Check → Keep.** Your first change makes one round playable. Then choose one small follow-up feature and repeat with less guidance.
 
 [Visual overview](https://kaw393939.github.io/218_spec/) · [Setup help](https://kaw393939.github.io/218_spec/setup.html) · [Background](https://kaw393939.github.io/218_spec/background.html)
 
