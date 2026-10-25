@@ -27,7 +27,9 @@ Treat each template as a small learning environment: a recognizable goal, a runn
 
 Guide the first feature closely. After it works, offer a few small feature ideas and let the student choose one, write the request, and repeat with less prompting. New course projects can reuse this structure while changing the concept being practiced. A website might emphasize audience and design; a hosting project might emphasize deployment and recovery. Keep each project's first task narrow.
 
-The risk is that the agent completes the exercise while the learner watches. Preserve student actions: predict an outcome, approve the saved plan, inspect a test, try the application, and explain a mismatch. These design choices aim to support learning; agent-enacted walkthroughs cannot establish student engagement or learning outcomes.
+The starter's AGENTS.md makes the agent a conversational guide. It gives one small step or question, then waits. Use a few natural pauses: what the starter checks verify, a predicted outcome, what an actual test catches, and a round the learner observed. Give hints or a brief example when needed. Avoid quizzes after every command, grading, and extra reflection documents.
+
+The risk is that the agent completes the exercise while the learner watches. Preserve those student responses; do not write both sides of the conversation or treat “yes” as an explanation. Keep short decisions in SPEC.md and actual observations in the work record. These design choices aim to support learning; agent-enacted walkthroughs cannot establish student engagement or learning outcomes.
 
 Preserve the prepared checks and shared configuration. Explain positive/negative cases separately from unit/integration/E2E levels. The [worked failure example](./checks#when-a-check-fails) must be self-contained; do not require students to introduce bugs or write an extra reflection document.
 

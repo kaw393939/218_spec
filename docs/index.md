@@ -28,7 +28,7 @@ You get a Python app with a browser interface. **The game rules are unfinished.*
 - Use tests, code analysis, and formatting checks as repeatable feedback.
 - Inspect the result and leave a clear trail from the request to the code and checks.
 
-You decide what should happen. AI helps build and check it. You decide whether the result meets the spec.
+**Learn through the conversation.** The agent gives one small step, then waits for you. Predict a round, explain one test together, and describe something you saw while playing. Short answers are fine; ask for a hint or example when you're unsure.
 
 **The checks are prepared:** pytest checks behavior, Pylint analyzes Python, and Black checks formatting. Valid and invalid cases describe what you try; unit, integration, and real-browser checks describe how much of the system you exercise. [See the examples and limits](./checks).
 

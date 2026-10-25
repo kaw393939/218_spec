@@ -10,6 +10,8 @@ next: false
 
 <WorkflowMap compact />
 
+The agent should give one small step or question, then wait for your response. A sentence is enough. “I'm not sure” is a useful answer; ask for a hint or an example. Keep learning in the conversation as you work.
+
 ## 1. Try the starter
 
 Create your GitHub copy of the template, SSH-clone it, and open that folder as a local AI project. The README shows the ChatGPT desktop path and the first prompt. Ask the agent to explain what you will build and what is supplied, then guide setup one checkpoint at a time.
@@ -18,11 +20,13 @@ Let the agent prepare the class Python environment and run the baseline checks. 
 
 **Checkpoint:** the agent can read your clone, the checks pass with **STARTER BASELINE ONLY**, and the browser shows the unfinished game. You have something running before you plan the change.
 
+Tell the agent what you see, then discuss what those passing starter checks verified.
+
 ## 2. Decide with your coding agent
 
 Continue in the same local project chat.
 
-Predict one matchup yourself, then ask the agent to read `AGENTS.md` and `SPEC.md` and propose a short plan without editing. Compare it with the nine expected outcomes. Ask about anything you cannot explain.
+The agent asks you to predict a matchup before explaining it or proposing the plan. Give the expected result and why. Check the nine expected outcomes together, then agree on a short plan without editing the app yet. Ask about anything that doesn't make sense.
 
 Agree on the rules and a small test plan. A valid loss is a **positive case**; an unsupported move is a **negative case**. Those describe the inputs, while unit, integration, and E2E describe the [level of a check](./checks).
 
@@ -38,7 +42,7 @@ Create the feature branch with terminal Git. Ask the same agent to compare the s
 
 Expect the rule function in `game.py`, rule/request tests in `tests/test_game.py`, a real-browser test in `tests/e2e/test_round.py`, and the work record in `SPEC.md`. Leave scoring for later.
 
-**Checkpoint:** AI explains its focused changes, runs the full prepared checks, and reviews the diff before you play. It reports actual results and remaining human checks.
+**Checkpoint:** AI explains its focused changes, runs the full prepared checks, and reviews the diff before you play. Then it shows one actual test for your predicted matchup and asks what mistake it could catch. Talk it through before moving on; you can ask for a hint.
 
 ## 4. Check and give feedback
 
@@ -50,7 +54,7 @@ Nine deterministic unit cases check the rules; request tests check server integr
 
 If something fails, use the [worked failure example](./checks#when-a-check-fails): describe the action, expected result, and observed result; ask for a focused fix and retest. Keep meaningful assertions and shared settings. You do not need to invent a bug.
 
-**Checkpoint:** you can connect one requirement to code and a meaningful test. Ask the agent to record actual checks and your browser observations in `SPEC.md`.
+**Checkpoint:** tell the agent about one round: both moves and why the result makes sense. You can connect one requirement to code and a meaningful test. Ask the agent to record actual checks and your browser observations in `SPEC.md`.
 
 ## 5. Keep the reviewed change
 

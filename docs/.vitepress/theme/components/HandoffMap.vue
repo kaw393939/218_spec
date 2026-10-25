@@ -2,7 +2,7 @@
   <figure id="codex-handoff" class="saved-plan" aria-label="One local project chat uses SPEC.md to keep agreed decisions in the project">
     <figcaption>One local project chat · your cloned folder</figcaption>
     <div class="plan-flow">
-      <div class="part"><strong>Discuss and agree</strong><span>You decide the rules and plan.</span></div>
+      <div class="part"><strong>Predict and discuss</strong><span>Explain an example, then agree on the plan.</span></div>
       <div class="part file"><strong>SPEC.md</strong><span>Ask the agent to save the agreed plan.</span><span>Read it in the app's terminal.</span></div>
       <div class="part"><strong>Continue in the same chat</strong><span>Read the saved decisions.</span><span>Build, test, and review.</span></div>
     </div>

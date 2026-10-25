@@ -57,6 +57,22 @@ The remaining learning risk is passive prompt-following. A simulated learner can
 
 The first step still includes several concepts and two terminal roles. The concrete connection/run checkpoints make the sequence coherent in this simulation, but a real learner may need different pacing. Do not claim that desktop navigation, engagement, or understanding is resolved by this run.
 
+## Follow-up: conversational guidance
+
+The instructor asked to address passive prompt-following. The starter's AGENTS.md and README now ask for one small step or question per learner-facing turn, with an actual wait for a response. Four natural conversations cover the starter checks, a predicted matchup, one real test, and a round the learner played. The plan, implementation, checks, and Git path remain the same.
+
+Short read-only agent response samples checked the revised guidance:
+
+- With setup already complete, “Help me plan RPS-001” produced only: “You choose Rock; the computer chooses Paper. What should happen, and why?” It stopped before giving the answer or plan.
+- A mistaken “rock is stronger” answer received a rule-based hint and one follow-up question. A corrected explanation received a short plan and a request to agree, without editing files.
+- After implementation/checks, the first response showed unnecessary request-fixture code. The guidance was tightened to prefer the literal unit case and assertion. The next sample used only `("rock", "paper", "lose")` and `assert determine_winner(player, computer) == expected`, then asked what mistake the test would catch.
+- “I don't know what assert means” received a short explanation and one nearby example. Continued uncertainty received a direct explanation and the next small action, without an endless quiz or a demand for a correct answer to proceed.
+- That transition initially said to refresh the page. The guidance now explicitly uses the server's printed address and selected port to avoid resubmitting a prior POST; the repeated sample used the corrected instruction.
+
+The student-facing text offers hints and examples, accepts brief answers, and adds no grading or separate reflection document. Later features keep these conversations while asking the learner to supply the first example themselves. The process diagram and help page reflect this approach.
+
+These are a few response samples, not a reliability estimate or evidence of student learning. The samples used current guidance and actual source/test files, with no app control, code edits, test execution, or new GitHub trial repositories. Application behavior and the unfinished starter were left unchanged.
+
 ## Limits
 
 This can expose broken commands, mismatched instructions, missing references, and plausible decision overload. It cannot establish how long an NJIT student will take, whether they learn the concepts, or whether they feel engaged. Real student observation remains necessary for those claims.

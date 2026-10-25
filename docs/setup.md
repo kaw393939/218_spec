@@ -32,6 +32,8 @@ Keep two terminals straight: the **class terminal runs the game**; the AI app's 
 
 ## Working with AI
 
+**Agent rushing ahead?** Say: “Give me one small step or question, then wait for my answer. Help me work it out before moving on.”
+
 **Unsure what a term means?** Ask: “Explain that using this game's behavior, and show me the file I should inspect.” You do not need to accept a plan you cannot explain.
 
 **New chat forgot the plan?** Point the local agent to your saved `SPEC.md`. The normal route stays in one chat; the file preserves decisions if you need to return later.
