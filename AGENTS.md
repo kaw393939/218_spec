@@ -2,9 +2,11 @@
 
 This is the instructor’s documentation site for a small AI collaboration exercise. The student game starter is https://github.com/kaw393939/is218-rps-starter, a separate Python repository. Do not copy a completed student solution here or silently implement the starter's unfinished rules.
 
-- Students use ChatGPT desktop to discuss, Codex in the same local project folder to implement/test/review, VS Code to inspect, and terminal Git over SSH. Do not teach the VS Code Command Palette, Git GUI, Copilot, or Codespaces as substitutes.
+- Students use one local Codex chat inside ChatGPT desktop to discuss/save SPEC.md/implement/test/review, plus terminal Git over SSH and a browser. VS Code is optional. Do not require an IDE extension, separate CLI, app-to-app handoff, Command Palette, Git GUI, Copilot, or Codespaces.
+- The exercise is fully self-paced with explicit actions and success checkpoints. Do not rely on classroom demonstrations. Use a self-contained worked failure example; no required extra reflection or bug-making task.
 - Keep one authoritative student path in the starter README. This site introduces the purpose and provides a visual guide, help, and optional background. Do not add a second full setup/assignment path.
 - Main cycle: Try → Decide → Build → Check → Keep. Save agreed decisions in SPEC.md. AI tests and reviews before the student plays and inspects the change; accurately state evidence limits.
+- Explain positive/negative cases separately from unit/integration/E2E levels. The starter's check.py combines Black, Pylint, pytest and a small real-browser journey with shared configuration. Keep this prepared; do not add tool-setup choices, score targets, or weaken checks to pass.
 - RPS-001 is one independent round. RPS-002 first-to-two scoring is a separate later cycle. Avoid new features, grading machinery, token quotas, compulsory reflections, and unnecessary architecture.
 - Read relevant files/specs before editing. Preserve links among requirements, issues, PRs, code, and actual checks. Do not invent evidence or source links.
 - Documentation lives in docs/; navigation in docs/.vitepress/config.mts. Run npm run docs:build for site changes.

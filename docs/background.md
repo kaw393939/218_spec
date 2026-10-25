@@ -2,6 +2,12 @@
 
 A large language model (LLM) generates responses from instructions and available context. A coding tool can also let it read files, edit code, and run commands. Useful collaboration means giving it a clear task and checking what it produces.
 
+## Give AI objective feedback
+
+The project supplies pytest, Pylint, Black, and a small real-browser check through one prepared check command. These provide repeatable feedback about behavior, suspicious code, and formatting.
+
+Positive and negative describe the kind of case: a valid losing move is positive; an unsupported move is negative. Unit, integration, and end-to-end describe the level being exercised. [How the automatic checks work](./checks) explains the examples and limits, including a worked failure. The starter README remains the single assignment path.
+
 ## Why write a short spec?
 
 A spec is a shared description of the intended result. A few examples make it easier to discuss an idea before changing code. Update it when you make a new decision.
@@ -9,6 +15,8 @@ A spec is a shared description of the intended result. A few examples make it ea
 This resembles approaches used in current AI development tools. GitHub's Spec Kit carries a specification through planning, tasks, implementation, and checking the result. GitHub's coding-agent guidance recommends clear, bounded tasks with explicit expected outcomes. These are examples of industry practice, not proof that one workflow always succeeds. Our exercise uses the common ideas with ordinary Markdown and GitHub. [Spec Kit](https://github.github.com/spec-kit/), [GitHub guidance](https://docs.github.com/en/copilot/tutorials/cloud-agent/get-the-best-results)
 
 ## You and the AI
+
+In this lab, one local Codex chat inside ChatGPT desktop can read your cloned folder, discuss the task, save agreed decisions, edit files, and run checks. Stay in that chat through the cycle. VS Code is optional; the app's terminal and file viewer support inspection.
 
 You bring the purpose, preferences, and decisions. AI can help clarify questions, suggest options, explain files, and implement changes. The running application and its checks give you something concrete to inspect together.
 
@@ -22,7 +30,7 @@ Ask for explanations and alternatives when useful. Treat confident claims as cla
 
 Planning also uses tokens. It may save work when an early clarification prevents a mistaken implementation and repeated repairs. Prose is not automatically cheaper than code, and savings are not guaranteed. Aim for a useful result you understand.
 
-When starting a new chat, provide the spec, current task, and a short note about what works and what remains. Let the tool inspect current files rather than relying on an old conversation alone.
+Save agreed decisions in `SPEC.md` even while staying in one chat. If you later need a new chat, open the same project and ask the agent to read that spec and inspect the current files. Add a short note about what works and what remains. Do not rely on an old conversation alone.
 
 ## Read more when useful
 

@@ -1,6 +1,6 @@
 # Keep the work visible
 
-For RPS-001, keep the current decisions in your local `SPEC.md`. GitHub connects the request to the change so you can return later without reconstructing a chat.
+For RPS-001, ask the agent in your local Codex chat to save the agreed decisions in `SPEC.md`. Inspect that file in the app's terminal. GitHub connects the request to the change so you can return later without reconstructing a chat.
 
 | Record | What belongs there |
 | --- | --- |

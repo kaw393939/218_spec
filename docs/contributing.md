@@ -15,8 +15,10 @@ Do not ask students to install this site's Node dependencies or build VitePress 
 
 ## Keep the lesson focused
 
-Confirm SSH access, Python, local AI tools, and Git identity during class setup. Demonstrate a short cycle: agree on behavior, save the plan, ask AI to implement and test, then inspect and play.
+The lab must work without a classroom demonstration. Give explicit actions, expected results, and checkpoints in the starter README. Assume the existing class SSH setup, and link precise recovery help for Python, local app access, and Git identity.
 
-Keep installation recovery on the help page. Keep background reading optional. Avoid duplicate command sequences and handoff prompts across the site and README.
+Use one local Codex chat inside ChatGPT desktop for discussion, saving the plan, implementation, tests, and review. VS Code is optional. Keep installation recovery on the help page and background reading optional. Avoid duplicate command sequences or a second full assignment path on the site.
+
+Preserve the prepared checks and shared configuration. Explain positive/negative cases separately from unit/integration/E2E levels. The [worked failure example](./checks#when-a-check-fails) must be self-contained; do not require students to introduce bugs or write an extra reflection document.
 
 The [earlier trial report](https://github.com/kaw393939/218_spec/blob/main/research/2026-10-25-full-ssh-assignment-trial.md) identified context handoff and setup friction. These are observations from an agent-enacted trial, not evidence of student learning outcomes. Use real student observation to check whether the revised materials help.

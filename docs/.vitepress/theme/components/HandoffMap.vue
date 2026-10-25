@@ -1,16 +1,20 @@
 <template>
-  <figure id="codex-handoff" class="handoff" aria-label="Save the plan in SPEC.md, then have Codex read it in the same folder">
-    <div class="endpoint"><strong>ChatGPT desktop</strong><span>Discuss and agree</span></div>
-    <div class="packet"><strong>Save → SPEC.md</strong><span>Rules, plan, and issue link</span><span>One file carries the decisions.</span></div>
-    <div class="endpoint"><strong>Codex · same folder</strong><span>Read AGENTS.md + SPEC.md</span><span>Inspect, build, test, and review</span></div>
+  <figure id="codex-handoff" class="saved-plan" aria-label="One local Codex chat uses SPEC.md to keep agreed decisions in the project">
+    <figcaption>One local Codex chat · ChatGPT desktop · your cloned folder</figcaption>
+    <div class="plan-flow">
+      <div class="part"><strong>Discuss and agree</strong><span>You decide the rules and plan.</span></div>
+      <div class="part file"><strong>SPEC.md</strong><span>Ask the agent to save the agreed plan.</span><span>Read it in the app's terminal.</span></div>
+      <div class="part"><strong>Continue in the same chat</strong><span>Read the saved decisions.</span><span>Build, test, and review.</span></div>
+    </div>
   </figure>
 </template>
 
 <style scoped>
-.handoff { display: grid; grid-template-columns: 1fr 1.2fr 1fr; gap: 12px; margin: 24px 0; align-items: stretch; }
-.endpoint, .packet { display: flex; flex-direction: column; gap: 8px; border: 1px solid var(--vp-c-divider); border-radius: 12px; padding: 16px; font-size: 14px; line-height: 1.5; }
-.endpoint { justify-content: center; background: var(--vp-c-bg-soft); }
-.packet { background: var(--vp-c-brand-soft); }
-.packet strong { color: var(--vp-c-brand-1); }
-@media (max-width: 720px) { .handoff { grid-template-columns: 1fr; } }
+.saved-plan { margin: 24px 0; border: 1px solid var(--vp-c-divider); border-radius: 12px; overflow: hidden; }
+figcaption { padding: 12px 16px; background: var(--vp-c-bg-soft); font-size: 13px; font-weight: 700; line-height: 1.5; }
+.plan-flow { display: grid; grid-template-columns: 1fr 1.15fr 1fr; gap: 12px; padding: 16px; }
+.part { display: flex; flex-direction: column; justify-content: center; gap: 8px; border-radius: 8px; padding: 12px; font-size: 14px; line-height: 1.5; }
+.file { background: var(--vp-c-brand-soft); }
+.file strong { color: var(--vp-c-brand-1); }
+@media (max-width: 720px) { .plan-flow { grid-template-columns: 1fr; } }
 </style>

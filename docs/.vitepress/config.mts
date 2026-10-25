@@ -15,6 +15,7 @@ export default defineConfig({
     sidebar: [
       { text: 'Rock, Paper, Scissors', items: [
         { text: 'Overview', link: '/' },
+        { text: 'How automatic checks help', link: '/checks' },
         { text: 'README: do the assignment', link: 'https://github.com/kaw393939/is218-rps-starter#readme' },
         { text: 'Process guide', link: '/practice' },
         { text: 'If you get stuck', link: '/setup' }

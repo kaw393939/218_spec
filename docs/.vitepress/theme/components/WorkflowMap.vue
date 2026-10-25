@@ -3,9 +3,9 @@ import { withBase } from 'vitepress'
 defineProps<{ compact?: boolean }>()
 const steps = [
   ['Try', 'Browser', 'See the supplied game shell.', '_1-try-the-starter'],
-  ['Decide', 'ChatGPT desktop', 'Agree on rules and save the plan.', '_2-decide-with-chatgpt'],
-  ['Build', 'Codex', 'Read the spec and finish one feature.', '_3-build-with-codex'],
-  ['Check', 'AI, then you', 'Test first, then play and inspect.', '_4-let-ai-check-then-play'],
+  ['Decide', 'Local Codex chat', 'Agree, save, and inspect the plan.', '_2-decide-with-your-coding-agent'],
+  ['Build', 'Same chat', 'Read the spec and finish one feature.', '_3-build-in-the-same-chat'],
+  ['Check', 'AI, then you', 'Test first, then play and inspect.', '_4-check-and-give-feedback'],
   ['Keep', 'Terminal Git + PR', 'Review and keep the change.', '_5-keep-the-reviewed-change']
 ]
 </script>
