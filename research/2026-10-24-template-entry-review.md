@@ -1,5 +1,7 @@
 # Student entry review: template, clone, and setup
 
+> **Archived trial record.** The disposable review repositories are now read-only. Use the [current student starter](https://github.com/kaw393939/is218-rps-starter#readme) for the assignment. See the [release and cleanup record](2026-10-25-student-release-and-cleanup.md).
+
 Date: October 24, 2026. Reviewed the published README/site revision `12ca439`, followed by the small wording corrections below.
 
 ## Changes

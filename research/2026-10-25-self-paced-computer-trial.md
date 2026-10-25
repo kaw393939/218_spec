@@ -1,5 +1,7 @@
 # Self-paced RPS walkthrough: fresh SSH clone
 
+> **Archived trial record.** The disposable review repositories are now read-only. Use the [current student starter](https://github.com/kaw393939/is218-rps-starter#readme) for the assignment. See the [release and cleanup record](2026-10-25-student-release-and-cleanup.md).
+
 October 25, 2026. This walkthrough starts from published starter revision `27368c9` and a fresh SSH clone. The continuation implements and checks the feature through the current coding chat, command tool, and browser. It is not a study of actual students or a completed ChatGPT desktop UI trial.
 
 ## What actually happened

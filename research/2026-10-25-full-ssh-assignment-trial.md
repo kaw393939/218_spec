@@ -1,5 +1,7 @@
 # Full fresh SSH assignment trial
 
+> **Archived trial record.** The disposable review repositories are now read-only. Use the [current student starter](https://github.com/kaw393939/is218-rps-starter#readme) for the assignment. See the [release and cleanup record](2026-10-25-student-release-and-cleanup.md).
+
 October 25, 2026. Tested instructor revision 291696e in a new copy, [ai-practice-full-review-1025](https://github.com/kaw393939/ai-practice-full-review-1025). Local folder: `/Users/kwilliams/Documents/is218/ai-practice-full-review-1025`; initial commit 04f6893. This is an agent-enacted trial, not a study with human students.
 
 ## What was actually exercised

@@ -1,5 +1,7 @@
 # Critical terminal-first assignment trial
 
+> **Archived trial record.** The disposable review repositories are now read-only. Use the [current student starter](https://github.com/kaw393939/is218-rps-starter#readme) for the assignment. See the [release and cleanup record](2026-10-25-student-release-and-cleanup.md).
+
 Date: October 24, 2026. Started from the README/site revision `6670390`.
 
 This is an agent-enacted novice walkthrough on the instructor's computer. Interface outcomes are observations; boredom, motivation, and likely student interpretations are hypotheses, not findings from human participants.

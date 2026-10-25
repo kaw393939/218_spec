@@ -1,5 +1,7 @@
 # Actual assignment trial with UI interaction
 
+> **Archived trial record.** The disposable review repositories are now read-only. Use the [current student starter](https://github.com/kaw393939/is218-rps-starter#readme) for the assignment. See the [release and cleanup record](2026-10-25-student-release-and-cleanup.md).
+
 Date: October 23, 2026. Starting instructions: https://kaw393939.github.io/218_spec/start.html.
 
 ## Current outcome

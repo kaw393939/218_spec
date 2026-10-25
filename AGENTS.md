@@ -12,4 +12,5 @@ This is the instructor’s documentation site for a small AI collaboration exerc
 - Documentation lives in docs/; navigation in docs/.vitepress/config.mts. Run npm run docs:build for site changes.
 - The existing Node/SQLite link app is an archived worked example. Run npm test for changes affecting it; npm start runs it. GitHub Pages serves instructions only.
 - Keep secrets, virtual environments, local SQLite data, caches, and student trial solutions out of this repository. Completed trials belong in separate repositories; research notes may link to them.
+- Retire disposable trial repositories after walkthroughs and preserve the findings/evidence. Keep the active student path pointed at the unfinished template, not a solved trial.
 - Students already have class GitHub SSH setup. Use git@github.com:USERNAME/REPOSITORY.git and terminal Git in instructions and trials.

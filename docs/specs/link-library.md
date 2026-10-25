@@ -4,7 +4,7 @@
 
 Our worked example: save links now; add summaries and organization later. [Follow the walkthrough](../example).
 
-**For:** one person. **Progress:** LINK-001 is implemented locally. Page reading, summaries, search, and editing are still planned.
+**For:** one person. **Archived progress:** LINK-001 is implemented locally. Page reading, summaries, search, and editing remain unimplemented; their old backlog issues are closed, not student assignments.
 
 ## Intended flow
 
@@ -55,7 +55,7 @@ Shared accounts, team roles, browser extensions, bulk imports, scheduled refresh
 
 ## Work and code
 
-Each feature has one issue. As implementation lands, add its pull request, source files, and tests here. **Planned** means the feature is not implemented yet.
+Each feature has one issue. This historical record preserves the requirement-to-code links. LINK-002 through LINK-005 were planned but never implemented; their issues are now archived as not planned.
 
 | Feature | Issue | Implementation | Verification |
 | --- | --- | --- | --- |
@@ -69,6 +69,6 @@ Each feature has one issue. As implementation lands, add its pull request, sourc
 
 - **Agreed:** Node.js with its built-in HTTP server and SQLite support. No application framework needed for saving links.
 - **Agreed:** Duplicate submissions preserve the original note so saving again does not overwrite it.
-- **Open:** Where to host the app after the local version works.
+- **Historical open question:** Where to host the app after the local version works.
 
-Next step: LINK-002, reading a saved page. LINK-003 will add categorization and summaries afterward.
+The earlier next-step ideas were LINK-002 page reading and LINK-003 summaries. The current student assignment is the Rock, Paper, Scissors starter linked at the top.
