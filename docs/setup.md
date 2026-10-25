@@ -18,7 +18,9 @@ next: false
 | Port 5050 is in use | Leave other programs alone. Run `PORT=5051 .venv/bin/python run.py` and open **http://127.0.0.1:5051**. |
 | Game says its rules are unfinished | Setup worked. You are ready to implement RPS-001. |
 | AI cannot find `game.py` | Compare the ChatGPT desktop local project's folder with `pwd` in your project terminal. Open your cloned game folder in Codex mode, using **This computer**, not a cloud project. |
-| Browser shows an old version | Check the running terminal for errors, then refresh the printed address. Restart your own app if needed. |
+| Browser shows an old version | Check the running terminal for errors, then open the printed address again. Restart your own app if needed. |
+| Safari asks to send a form again | Choose Cancel, open the server's printed address in the address bar, then choose a move. |
+| Safari's Tab key skips move buttons | Click the game area, then use Option+Tab to focus a button and Enter to play. |
 | A red development-server warning or pip update notice | Normal for this local exercise. Look for `Running on http://127.0.0.1:5050` and open that address; no server replacement or pip update is needed. |
 
 Use your **class terminal**: macOS Terminal or Ubuntu/WSL on Windows. The README's commands use that environment. Ask your instructor if Python or account access is missing.

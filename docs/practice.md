@@ -40,9 +40,9 @@ Expect the rule function in `game.py`, rule/request tests in `tests/test_game.py
 
 ## 4. Check and give feedback
 
-Play several rounds and try the keyboard controls. Are both choices visible? Is the result correct? Can you play again?
+Open the server's printed address again, play several rounds, and try the keyboard controls. In Safari, use Option+Tab if Tab skips buttons. Are both choices visible? Is the result correct? Can you play again?
 
-Run the full checks yourself and inspect the diff in the app's terminal. Find your predicted matchup in the tests and compare its assertion with the spec. You can open files in ChatGPT desktop; VS Code is optional.
+Run the full checks yourself and inspect the diff in the app's terminal. `git diff` omits new, untracked files: inspect both new test files too, as the README shows. Find your predicted matchup in the tests and compare its assertion with the spec. You can open files in ChatGPT desktop; VS Code is optional.
 
 Nine deterministic unit cases check the rules; request tests check server integration; a small real-browser journey checks a completed round and replay. Passing checks still leave you to judge the experience.
 
