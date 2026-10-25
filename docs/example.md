@@ -1,6 +1,12 @@
+---
+prev: false
+next: false
+---
 # Worked example: save a link
 
-**Instructor demonstration, already completed.** To do your own task, [start in the README](https://github.com/kaw393939/218_spec#readme).
+::: info Your task is PRACTICE-001: explain the Note limit
+This page shows the completed LINK-001 example. **App already running? [Continue your assignment](./practice).** Getting started? [Follow the README](https://github.com/kaw393939/218_spec#readme).
+:::
 
 The [personal link library](./specs/link-library) is our example of a small project built with AI. Only **LINK-001: Save a link** is implemented. The remaining features are plans.
 

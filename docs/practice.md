@@ -4,31 +4,34 @@ next: false
 ---
 # Your first change
 
-Your app should already be running from [the README](https://github.com/kaw393939/218_spec#readme). Keep its terminal open. Use a second terminal in the same project folder for Git.
-
-**Before:** Note has a limit you cannot see. **After:** this sentence appears directly below the box, before typing:
+**PRACTICE-001:** add this help directly below Note in your running app:
 
 > Add a short note (up to 4,000 characters).
 
-That is **PRACTICE-001**. This small change rehearses how to guide AI and verify its work. Saving and the existing limit stay unchanged.
+Saving and the existing limit stay unchanged. **You agree the plan, inspect the edits, and check the result.** Need to get the app running first? [Follow the README](https://github.com/kaw393939/218_spec#readme).
 
-**Your job:** agree a small scope, review the AI's edits, and back up your conclusions with checks. The spec, issue, and PR make those decisions visible to someone returning later.
+<details class="target-preview">
+<summary>Compare the starter and the goal</summary>
 
 <NoteComparison compact />
 
-<WorkflowMap />
+</details>
 
-**Finish with:** a merged PR, a closed issue, and a spec linked to your code and actual checks. Follow the five steps below; optional reading can wait.
+<WorkflowMap compact />
 
 ## 1. Agree a plan
 
-In **ChatGPT desktop**, attach `docs/specs/practice.md` from your cloned folder (or paste its contents). Ask:
+Keep the app running in its first terminal; use a second terminal in the same folder for Git.
+
+In **VS Code**, open `docs → specs → practice.md`. Attach that file in **ChatGPT desktop**, or copy its contents into the chat. Ask:
 
 > Help me understand this task. Do not code yet. Give me two labeled sections: “Plan for Codex” (at most five bullets) and “GitHub issue draft” (a title and short body with the feature ID, scope, and three examples to check). Use this spec link: https://kaw393939.github.io/218_spec/specs/practice.html
 
 Read the reply. Does it keep the task to help text below Note, connected to that field for assistive technology, with saving unchanged? Ask about anything unclear. Reject extra features. **You decide when the plan is ready.**
 
 ## 2. Record the task
+
+An issue keeps the plan and examples you agreed on in one place.
 
 In **your GitHub repository → Issues → New issue → Small feature or change**, use the AI's title and paste its body into **Plan and checks**. Review it against the spec before submitting. Copy the issue URL. GitHub's issue number is separate from the feature ID PRACTICE-001.
 
@@ -74,6 +77,8 @@ Press `q` if Git opens a scrolling view. Open the files in VS Code; ask Codex to
 Tell Codex what you actually saw. If the result is wrong, describe the mismatch and ask for a focused fix; restart and recheck. If it is right, ask it to record your browser results in the spec's short tracking row. Keep real issue/source links and actual results; do not claim checks you skipped.
 
 ## 5. Keep the reviewed change
+
+A pull request (PR) puts your changes and checks together for review before you keep them.
 
 In the second terminal:
 

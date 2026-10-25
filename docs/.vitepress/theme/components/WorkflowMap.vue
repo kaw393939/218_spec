@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { withBase } from 'vitepress'
+defineProps<{ compact?: boolean }>()
 const steps = [
   ['Plan', 'ChatGPT desktop', 'Agree what should change.', '_1-agree-a-plan'],
   ['Record', 'GitHub issue', 'Review the plan and examples.', '_2-record-the-task'],
@@ -10,18 +11,19 @@ const steps = [
 </script>
 
 <template>
-  <nav id="assignment-cycle" class="workflow" aria-label="The five-step assignment cycle">
+  <nav id="assignment-cycle" class="workflow" :class="{ compact }" aria-label="The five-step assignment cycle">
     <ol>
       <li v-for="(step, index) in steps" :key="step[0]">
         <a :href="withBase('/practice.html#' + step[3])">
         <span class="step-number">{{ index + 1 }}</span>
         <strong>{{ step[0] }}</strong>
         <span class="tool">{{ step[1] }}</span>
-        <span>{{ step[2] }}</span>
+        <span v-if="!compact">{{ step[2] }}</span>
         </a>
       </li>
     </ol>
-    <p>If a check fails, give AI specific feedback, revise, and check again.</p>
+    <p v-if="compact">Follow the steps in order. Select a card to return to a step.</p>
+    <p v-else>If a check fails, give AI specific feedback, revise, and check again.</p>
   </nav>
 </template>
 
@@ -37,6 +39,7 @@ const steps = [
 .workflow strong { font-size: 17px; }
 .tool { font-weight: 600; color: var(--vp-c-brand-1); }
 .workflow p { margin: 12px 0 0; font-size: 14px; color: var(--vp-c-text-2); }
+.compact a { gap: 4px; padding: 10px; }
 @media (max-width: 720px) {
   .workflow ol { grid-template-columns: 1fr; }
   .workflow a { padding: 12px 16px; display: grid; grid-template-columns: 28px 1fr; gap: 2px 12px; }

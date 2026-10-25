@@ -22,8 +22,8 @@ defineProps<{ compact?: boolean }>()
 figure { margin: 0; border: 1px solid var(--vp-c-divider); border-radius: 12px; overflow: hidden; background: var(--vp-c-bg-soft); }
 figcaption { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; font-size: 14px; line-height: 1.5; }
 figcaption strong { color: var(--vp-c-brand-1); }
-.comparison a { display: block; overflow: hidden; aspect-ratio: 1.4; }
-.comparison img { width: 200%; max-width: none; height: auto; display: block; transform: translate(-25%, -29%); }
+.comparison a { display: block; overflow: hidden; aspect-ratio: 3.2; }
+.comparison img { width: 200%; max-width: none; height: auto; display: block; transform: translate(-25%, -50%); }
 .compact { grid-template-columns: 1fr; }
 .compact a { aspect-ratio: 3.2; }
 .compact img { transform: translate(-25%, -50%); }

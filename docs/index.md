@@ -2,8 +2,8 @@
 layout: home
 hero:
   name: Working with AI
-  text: You guide. AI helps.
-  tagline: Make a small improvement to a working app—and learn how to plan, review, and check AI-assisted work.
+  text: Guide AI through one small change.
+  tagline: Add help below the Note box in a working app. Practice planning with AI, reviewing edits, and checking the result.
   actions:
     - theme: brand
       text: Begin with the README
@@ -15,11 +15,9 @@ hero:
 
 <div class="assignment-overview">
 
-## What is this assignment?
+## See the change you will make
 
-You are the developer responsible for the result. ChatGPT helps you discuss a change; Codex helps edit the files. **You decide what to build, inspect what changed, and check that it works.**
-
-Your starter already saves links. You will add one sentence explaining the Note field's limit. The change is small so you can practice a complete cycle before using it on your class project.
+The app already saves links. Your change adds **“Add a short note (up to 4,000 characters).”** below Note. ChatGPT helps plan; Codex edits the files. **You review and check the work.**
 
 <NoteComparison />
 
