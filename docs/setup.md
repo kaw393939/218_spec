@@ -23,6 +23,10 @@ next: false
 
 Use your **class terminal**: macOS Terminal or Ubuntu/WSL on Windows. The README's commands use that environment. Ask your instructor if Python or account access is missing.
 
+Keep two terminals straight: the **class terminal runs the game**; ChatGPT desktop's **project terminal runs checks and Git**. To stop the game, return to the class terminal and press **Ctrl+C**.
+
+**Returning later?** In the class terminal, `cd` into your existing clone and run `.venv/bin/python run.py` again. Reopen that same folder and chat in ChatGPT desktop, then return to your last README checkpoint. Keep your existing repository and `.venv`; do not repeat the template or clone steps.
+
 ## Working with AI
 
 **Unsure what a term means?** Ask: “Explain that using this game's behavior, and show me the file I should inspect.” You do not need to accept a plan you cannot explain.
@@ -59,4 +63,6 @@ To open your Ubuntu clone, press **Ctrl+O**, type `\\wsl$\` in the folder picker
 
 Before creating `.venv`, run `python3 --version`. The class and CI reference is **Python 3.12.x**. If `python3` points to another version, use your existing class setup to select 3.12, or use `python3.12 -m venv .venv` if that command is available. Do not replace the system Python to fix this exercise.
 
-Need to recover an environment already created with another version? Stop your server, rename `.venv` to an unused backup name, then recreate it with the class 3.12 interpreter and rerun the README install commands. Use your instructor's [Mac setup](https://github.com/kaw393939/IS218_Example_Fall2026/blob/main/assignments/assignment-0-mac.md) or [Windows/WSL setup](https://github.com/kaw393939/IS218_Example_Fall2026/blob/main/assignments/assignment-0-windows.md) if you cannot locate it.
+Cannot find the class interpreter? Follow only [Mac setup: select the course Python version](https://github.com/kaw393939/IS218_Example_Fall2026/blob/main/assignments/assignment-0-mac.md#2-select-the-course-python-version), or the Python section of your [Windows/WSL setup](https://github.com/kaw393939/IS218_Example_Fall2026/blob/main/assignments/assignment-0-windows.md). Do not redo unrelated account, SSH, or editor setup. If you still cannot locate Python 3.12, stop and ask your instructor before creating `.venv`.
+
+Need to recover an environment already created with another version? Stop your server, rename `.venv` to an unused backup name, then recreate it with the class 3.12 interpreter and rerun the README install commands.

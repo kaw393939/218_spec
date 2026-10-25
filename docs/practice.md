@@ -54,7 +54,7 @@ If something fails, use the [worked failure example](./checks#when-a-check-fails
 
 Use the README's terminal Git steps to review, commit, and push. Open a PR linked to your issue. Inspect the changed files and actual check results before merging. Added tests must exercise the real rules; unchanged starter checks alone do not establish completion.
 
-**Done:** your game works locally, the PR is merged, its issue is closed, and `SPEC.md` links to the implementation and actual checks. No extra reflection document is required.
+**Done:** your game works locally, the PR is merged, its issue is closed, and `SPEC.md` links to the implementation and actual checks. Stop the game with **Ctrl+C in the original class terminal**. No extra reflection document is required.
 
 <details>
 <summary>Another cycle, after the first one works</summary>
