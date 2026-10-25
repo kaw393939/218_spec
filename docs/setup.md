@@ -10,6 +10,7 @@ next: false
 
 | What you see | Next step |
 | --- | --- |
+| GitHub has no **Use this template** button | Sign in to GitHub, then reopen the starter repository. |
 | `Permission denied (publickey)` | Check that the SSH clone address is your own copy. Ask your instructor to help with the existing class SSH setup; do not replace keys or switch to HTTPS. |
 | Optional VS Code is unavailable | Keep using ChatGPT desktop's files and the terminal diff. VS Code is not required. |
 | `ModuleNotFoundError` for a check tool or Flask | In the project terminal, rerun `.venv/bin/python -m pip install -r requirements.txt`. |
@@ -27,7 +28,7 @@ Use your **class terminal**: macOS Terminal or Ubuntu/WSL on Windows. The README
 
 Keep two terminals straight: the **class terminal runs the game**; the AI app's **project terminal runs checks and Git**. To stop the game, return to the class terminal and press **Ctrl+C**.
 
-**Returning later?** In the class terminal, `cd` into your existing clone and run `.venv/bin/python run.py` again. Reopen that same folder and chat in ChatGPT desktop, then return to your last README checkpoint. Keep your existing repository and `.venv`; do not repeat the template or clone steps.
+**Returning later?** In the class terminal, `cd` into your existing clone and run `.venv/bin/python run.py` again. If you used another port, reuse that command and address. Reopen that same folder and chat in ChatGPT desktop, then return to your last README checkpoint. Keep your existing repository and `.venv`; do not repeat the template or clone steps.
 
 ## Working with AI
 
