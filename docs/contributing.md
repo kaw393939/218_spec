@@ -36,3 +36,5 @@ Preserve the prepared checks and shared configuration. Explain positive/negative
 The [earlier trial report](https://github.com/kaw393939/218_spec/blob/main/research/2026-10-25-full-ssh-assignment-trial.md) identified context handoff and setup friction. These are observations from an agent-enacted trial, not evidence of student learning outcomes. Use real student observation to check whether the revised materials help.
 
 The [fresh SSH onboarding trial](./review/onboarding-2026-10-26) records actual startup, preview-mode and live-refresh findings for IS117 and IS218, including the corrected obsolete-polling defect. It is optional instructor evidence.
+
+The [full coached assignment trials](./review/full-assignments-2026-10-26) preserve separate simulated-learner decisions, assistance and implementation evidence. This optional instructor report distinguishes completed checks from pending review and does not establish real learning outcomes.
