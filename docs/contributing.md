@@ -34,3 +34,5 @@ The risk is that the agent completes the exercise while the learner watches. Pre
 Preserve the prepared checks and shared configuration. Explain positive/negative cases separately from unit/integration/E2E levels. The [worked failure example](./checks#when-a-check-fails) must be self-contained; do not require students to introduce bugs or write an extra reflection document.
 
 The [earlier trial report](https://github.com/kaw393939/218_spec/blob/main/research/2026-10-25-full-ssh-assignment-trial.md) identified context handoff and setup friction. These are observations from an agent-enacted trial, not evidence of student learning outcomes. Use real student observation to check whether the revised materials help.
+
+The [fresh SSH onboarding trial](./review/onboarding-2026-10-26) records actual startup, preview-mode and live-refresh findings for IS117 and IS218, including the corrected obsolete-polling defect. It is optional instructor evidence.
