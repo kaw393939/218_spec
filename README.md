@@ -6,6 +6,8 @@ Use Rock, Paper, Scissors to practice a repeatable process: agree what should ha
 
 **Try → Decide → Build → Check → Keep.** Your first change makes one round playable. Then choose one small follow-up feature and repeat with less guidance.
 
+The game starter's normal development command, `.venv/bin/python run.py`, refreshes the local browser when you save changes. Leave it running while working with AI; refresh clears the current round. [Startup modes and stopping the server](https://kaw393939.github.io/218_spec/setup.html#see-saved-changes-while-you-work).
+
 [Visual overview](https://kaw393939.github.io/218_spec/) · [Setup help](https://kaw393939.github.io/218_spec/setup.html) · [Background](https://kaw393939.github.io/218_spec/background.html)
 
 ## About this repository

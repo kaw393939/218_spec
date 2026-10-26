@@ -19,7 +19,7 @@ next: false
 | Port 5050 is in use | Leave other programs alone. Run `PORT=5051 .venv/bin/python run.py` and open **http://127.0.0.1:5051**. |
 | Game says its rules are unfinished | Setup worked. You are ready to implement RPS-001. |
 | AI cannot find `game.py` | Compare the AI project's folder with `pwd` in your project terminal. In ChatGPT desktop, open your cloned game folder in Codex mode using **This computer**. |
-| Browser shows an old version | Check the running terminal for errors, then open the printed address again. Restart your own app if needed. |
+| Browser shows an old version | Save the file and check the running terminal for errors. Confirm the agent and server use the same clone and the browser uses its printed address. In `--plain` mode, refresh manually or restart after code edits. |
 | Safari asks to send a form again | Choose Cancel, open the server's printed address in the address bar, then choose a move. |
 | Safari's Tab key skips move buttons | Click the game area, then use Option+Tab to focus a button and Enter to play. |
 | A red development-server warning or pip update notice | Normal for this local exercise. Look for `Running on http://127.0.0.1:5050` and open that address; no server replacement or pip update is needed. |
@@ -29,6 +29,19 @@ Use your **class terminal**: macOS Terminal or Ubuntu/WSL on Windows. The README
 Keep two terminals straight: the **class terminal runs the game**; the AI app's **project terminal runs checks and Git**. To stop the game, return to the class terminal and press **Ctrl+C**.
 
 **Returning later?** In the class terminal, `cd` into your existing clone and run `.venv/bin/python run.py` again. If you used another port, reuse that command and address. Reopen that same folder and chat in ChatGPT desktop, then return to your last README checkpoint. Keep your existing repository and `.venv`; do not repeat the template or clone steps.
+
+## See saved changes while you work
+
+After the starter README's setup, run from your game clone:
+
+| Command | What happens |
+| --- | --- |
+| `.venv/bin/python run.py` | Recommended development mode. Saving Python, template, CSS or JavaScript changes refreshes the open game automatically. Python changes also restart the local server. |
+| `.venv/bin/python run.py --plain` | Optional stable preview. No automatic server restart or browser refresh; restart after code edits and refresh manually. |
+
+Open the address printed in the terminal, normally **http://127.0.0.1:5050**, and leave that terminal running. Live refresh returns to the starting page and clears the current round instead of submitting the previous move again. Only saved files trigger updates. Stop either mode with **Ctrl+C**.
+
+These updates affect your local game. This GitHub Pages site contains the instructions; it does not run or automatically publish your game.
 
 ## Working with AI
 
