@@ -11,6 +11,7 @@ next: false
 | What you see | Next step |
 | --- | --- |
 | GitHub has no **Use this template** button | Sign in to GitHub, then reopen the starter repository. |
+| Clone has no project files yet | Wait until your new GitHub repository shows its README. Let the agent pull the generated default branch into that untouched clone; do not create replacement files. |
 | `Permission denied (publickey)` | Check that the SSH clone address is your own copy. Ask your instructor to help with the existing class SSH setup; do not replace keys or switch to HTTPS. |
 | Optional VS Code is unavailable | Keep using ChatGPT desktop's files and the terminal diff. VS Code is not required. |
 | `ModuleNotFoundError` for a check tool or Flask | In the project terminal, rerun `.venv/bin/python -m pip install -r requirements.txt`. |
@@ -19,16 +20,16 @@ next: false
 | Port 5050 is in use | Leave other programs alone. Run `PORT=5051 .venv/bin/python run.py` and open **http://127.0.0.1:5051**. |
 | Game says its rules are unfinished | Setup worked. You are ready to implement RPS-001. |
 | AI cannot find `game.py` | Compare the AI project's folder with `pwd` in your project terminal. In ChatGPT desktop, open your cloned game folder in Codex mode using **This computer**. |
-| Browser shows an old version | Save the file and check the running terminal for errors. Confirm the agent and server use the same clone and the browser uses its printed address. In `--plain` mode, refresh manually or restart after code edits. |
+| Browser shows an old version | Save the file and check the running terminal for errors. Confirm the agent and server use the same clone and the browser uses its printed address. In `--plain` mode, restart after Python/template edits; refresh manually after CSS/JavaScript edits. |
 | Safari asks to send a form again | Choose Cancel, open the server's printed address in the address bar, then choose a move. |
 | Safari's Tab key skips move buttons | Click the game area, then use Option+Tab to focus a button and Enter to play. |
-| A red development-server warning or pip update notice | Normal for this local exercise. Look for `Running on http://127.0.0.1:5050` and open that address; no server replacement or pip update is needed. |
+| A red development-server warning or pip update notice | Normal for this local exercise. Open the address after `Running on` (normally `http://127.0.0.1:5050`, or your chosen port); no server replacement or pip update is needed. |
 
 Use your **class terminal**: macOS Terminal or Ubuntu/WSL on Windows. The README's commands use that environment. Ask your instructor if Python or account access is missing.
 
 Keep two terminals straight: the **class terminal runs the game**; the AI app's **project terminal runs checks and Git**. To stop the game, return to the class terminal and press **Ctrl+C**.
 
-**Returning later?** In the class terminal, `cd` into your existing clone and run `.venv/bin/python run.py` again. If you used another port, reuse that command and address. Reopen that same folder and chat in ChatGPT desktop, then return to your last README checkpoint. Keep your existing repository and `.venv`; do not repeat the template or clone steps.
+**Returning later?** Check your game terminal first. If it is still running, use its printed address. Otherwise `cd` into the existing clone and run `.venv/bin/python run.py`, reusing your `PORT` prefix if needed. Reopen that same project/chat and return to your last README checkpoint. Keep your repository and `.venv`; do not clone or install again.
 
 ## See saved changes while you work
 
@@ -37,9 +38,9 @@ After the starter README's setup, run from your game clone:
 | Command | What happens |
 | --- | --- |
 | `.venv/bin/python run.py` | Recommended development mode. Saving Python, template, CSS or JavaScript changes refreshes the open game automatically. Python changes also restart the local server. |
-| `.venv/bin/python run.py --plain` | Optional stable preview. No automatic server restart or browser refresh; restart after code edits and refresh manually. |
+| `.venv/bin/python run.py --plain` | Optional stable preview. No automatic restart or refresh. Restart after Python/template edits; refresh manually after CSS/JavaScript edits. |
 
-Open the address printed in the terminal, normally **http://127.0.0.1:5050**, and leave that terminal running. Live refresh returns to the starting page and clears the current round instead of submitting the previous move again. Only saved files trigger updates. Stop either mode with **Ctrl+C**.
+Open the address printed in the terminal, normally **http://127.0.0.1:5050**, and leave that terminal running. Live refresh returns to the starting page and clears the current round instead of submitting the previous move again. Only saved files trigger updates. Stop either mode with **Ctrl+C**. Before switching modes, stop the current server; then start the other command and reopen its printed address. Keep any chosen `PORT` prefix.
 
 These updates affect your local game. This GitHub Pages site contains the instructions; it does not run or automatically publish your game.
 
@@ -89,7 +90,7 @@ To open your Ubuntu clone, press **Ctrl+O**, type `\\wsl$\` in the folder picker
 
 ## Python version
 
-Before creating `.venv`, run `python3 --version`. The class and CI reference is **Python 3.12.x**. If `python3` points to another version, use your existing class setup to select 3.12, or use `python3.12 -m venv .venv` if that command is available. Do not replace the system Python to fix this exercise.
+Before creating `.venv`, run `python3 --version`. The class and CI reference is **Python 3.12.x**. If `python3` points to another version, let the agent locate and verify your existing class 3.12 interpreter, including its full path if needed, before creating `.venv`. If `python3.12` is available, it can use `python3.12 -m venv .venv`. Do not replace the system Python to fix this exercise.
 
 Cannot find the class interpreter? Follow only [Mac setup: select the course Python version](https://github.com/kaw393939/IS218_Example_Fall2026/blob/main/assignments/assignment-0-mac.md#2-select-the-course-python-version), or the Python section of your [Windows/WSL setup](https://github.com/kaw393939/IS218_Example_Fall2026/blob/main/assignments/assignment-0-windows.md). Do not redo unrelated account, SSH, or editor setup. If you still cannot locate Python 3.12, stop and ask your instructor before creating `.venv`.
 
